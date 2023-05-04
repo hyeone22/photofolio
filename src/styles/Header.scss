@@ -1,0 +1,16 @@
+.header{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  width: 97.5vw;
+  .header_time{
+    margin-left: 30px;
+  }
+  .header_battery{
+    margin-right: 30px;
+  }
+
+}

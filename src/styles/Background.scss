@@ -1,0 +1,21 @@
+.background_border {
+  width: 100%;
+  height: 100vh;
+  border: 20px solid #222;
+  border-radius: 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.background_border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/frame1.png);
+  background-size: cover;
+  opacity: 0.5;
+  filter: blur(1.5rem); 
+}
