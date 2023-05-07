@@ -1,0 +1,101 @@
+:root {
+  --text: #2B3044;
+  --line: #BBC1E1;
+  --line-active: #275EFE;
+}
+
+.setting_main{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background: #000;
+  position: relative;
+  border: 20px solid #222;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  .setting_header{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    padding: 3rem;
+    svg{
+      margin-top: 2rem;
+    }
+    .setting_text{
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      margin-left: 1rem;
+
+      h2{
+        color: #D1C7C7;
+        font-size: 5rem;
+        b {
+          display: inline-block;
+          position: relative;
+          text-decoration: none;
+          color: inherit;
+          margin: 0 var(--spacing, 0px);
+          transition: margin .25s;
+          svg {
+              width: 15vw;
+              height: 12vh;
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              transform: translate(-50%, 7px) translateZ(0);
+              fill: none;
+              stroke: var(--stroke, var(--line));
+              stroke-linecap: round;
+              stroke-width: 2px;
+              stroke-dasharray: var(--offset, 69px) 278px;
+              stroke-dashoffset: 361px;
+              transition: stroke .25s ease var(--stroke-delay, 0s), stroke-dasharray .35s;
+          }
+          &:hover {
+              --spacing: 4px;
+              --stroke: var(--line-active);
+              --stroke-delay: .1s;
+              --offset: 180px;
+          }
+      }
+      }
+      p:first-of-type{
+        color: #D1C7C7;
+        font-size: 0.7rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+      }
+      span{
+        position: relative;
+        border: 3px solid #D1C7C7;
+        border-radius: 30px;
+        margin-left: 1rem;
+
+      }
+      span:after{
+        content: "";
+        position: absolute;
+        border: 3px solid #6DC9F7;
+        border-radius: 30px;
+        transform: translateY(-3px)translateX(-3px); animation: ani1 5s ease-in-out 0.5s  infinite;
+
+      }
+      @keyframes ani1 {
+        0%{width: 1%;}
+        100%{width: 100%;}
+        }
+      p:last-of-type{
+        color: #D1C7C7;
+        font-size: 3rem;
+        margin: 1rem 0 0 1rem;
+      }
+    }
+  }
+  .setting_content{
+    color: #D1C7C7;
+  }
+
+}

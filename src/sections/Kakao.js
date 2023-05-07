@@ -1,11 +1,12 @@
 import Background from 'components/Background'
 import React from 'react'
 import '../styles/Kakao.scss';
+import Header from 'components/Header';
 
 function Kakao() {
   return (
     <div className='kakao_main'>
-      <Background/>
+      <Background />
       <div className='kakao_section'>
         <div className='kakao_movie'>  
         </div>
@@ -44,8 +45,11 @@ function Kakao() {
                 <p>Swiper 라이브러리로 친구기능의 스와이프 구현</p>
               </div>
             </div>
-            <span>Repository</span>
-            <span>Page</span>
+            <div className='kakao_nav'>
+              <span>Repository</span>
+              <span>Page</span>
+            </div>
+
         </div>
 
       </div> 

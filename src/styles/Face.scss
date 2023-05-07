@@ -1,0 +1,132 @@
+.face_main{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background: #000;
+  position: relative;
+  border: 20px solid #222;
+  border-radius: 30px;
+  box-sizing: border-box;
+  .face_section{
+    height: 90vh;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+    .face-id-wrapper {
+      border: 1px solid red;
+      width: 133px;
+      height: 133px;
+      position: relative;
+      
+      /*   position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+    }
+    
+    .face-id-wrapper svg {
+      position: absolute;
+      fill: #fff;
+      stroke: #fff;
+    }
+    
+    .face-id-wrapper.active .face-id-default {
+      opacity: 0;
+      transform: scale(1.2);
+      transition: opacity 1.5s, transform 1s;
+      fill: lightblue;
+      stroke: lightblue;
+    }
+    
+    .circle {
+      border-radius: 50%;
+      border: 3px solid #000;
+      width: 133px;
+      height: 133px;
+      background: transparent;
+      box-sizing: border-box;
+      position: absolute;
+      opacity: 0;
+    }
+    
+    .active .circle {
+      opacity: 1;
+      transition: opacity 0.7s, transform 2.2s;
+    }
+    
+    .circle.green {
+      border: 3px solid #88ef88;
+    }
+    
+    .circle.blue {
+      border: 3px solid #0aaaf7;
+    }
+    
+    .circle.purple {
+      border: 3px solid #ea54ea;
+    }
+    
+    .active .circle.green {
+      transform: rotateX(360deg);
+    }
+    
+    .active .circle.blue {
+      transform: rotateY(360deg);
+    }
+    
+    .active .circle.purple {
+      transform: rotateY(360deg) rotateX(360deg);
+    }
+    
+    .completed .circle.purple {
+      border: 3px solid #FFF;
+      transition: border 0.7s;
+    }
+    
+    .path-tick {
+      opacity: 0;
+    }
+    
+    .completed .path-tick {
+      stroke-dasharray: 49.4974746704;
+      stroke-dashoffset: 0;
+      animation: dash 0.6s linear forwards;
+      stroke-opacity: 1;
+      transition: stroke-opacity 0.1s step;
+      opacity: 1;
+    }
+    
+    /*   delay-time before animation */
+    @keyframes dash {
+      0% {
+        stroke-dashoffset: 49.4974746704;
+        stroke-opacity: 1;
+      }
+      60% {
+        stroke-dashoffset: 49.4974746704;
+      }
+      100% {
+        stroke-dashoffset: 0;
+        stroke-opacity: 1;
+      }
+    }
+    // svg{
+    //   margin-bottom: 3rem;
+    // }
+    p:first-of-type{
+      color: #fff;
+      font-weight: bold;
+      font-size: 6rem;
+    }
+    p:last-of-type{
+      color: #ABB2BF;
+      font-weight: bold;
+      font-size: 3rem;
+    }
+  }
+  
+}

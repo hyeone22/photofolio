@@ -9,7 +9,7 @@
     flex-direction: row;
     position: absolute;
     height: 92vh;
-    width: 95vw;
+    width: 95%;
     left: 2%;
     top: 5%;
     border: 1px solid blue;
@@ -159,10 +159,11 @@
       .kosdaq_layout{
         width: 42vw;
         height: 40vh;
-        margin: 1rem auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: 1rem auto;
+    
       }
       .kosdaq_title{
         display: flex;
@@ -216,6 +217,7 @@
         padding: 1rem;
         background-color: #000;
         border-radius: 20px;
+        
         .kosdaq_footer{
           padding-top: 6rem;
         }

@@ -67,7 +67,6 @@ function Home() {
       <div className='con4 paper image'>
         <div className='picture'></div>
         <div className='skill'>
-          <p>HTML</p>
           <p>CSS</p>
           <p>JSX</p>
           <p>React</p>

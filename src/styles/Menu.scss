@@ -1,0 +1,26 @@
+.menu_main{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background: #000;
+  position: relative;
+  border: 20px solid #222;
+  border-radius: 30px;
+  box-sizing: border-box;
+  .menu_time{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border: 1px solid red;
+    margin-top: 7rem;
+    p{
+      color: #fff;
+      font-size: 5rem;
+      font-weight: bold;
+    }
+    .day{
+      color: #fff;
+      font-size: 1.4rem;
+    }
+  }
+}
