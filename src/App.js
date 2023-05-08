@@ -13,12 +13,14 @@ import Settings from 'sections/Settings';
 import Introduce from 'sections/Introduce';
 import Menu from 'sections/Menu';
 import Call from 'sections/Call';
+import { BrowserRouter } from 'react-router-dom';
 
 
 
 
 function App() {
   return (
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div className="app"> 
     <>
     <Main />
@@ -37,6 +39,7 @@ function App() {
     <Off />
     </>  
     </div>
+    </BrowserRouter>
   );
 }
 
