@@ -52,7 +52,11 @@ function Kosdaq() {
 
           <div className='kosdaq_info'>
             <div className='kosdaq_title'>
-              <span></span>
+              <span>
+                <svg width="14" height="30" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <rect x="0.5" y="1" width="13" height="24" rx="1.5" fill="#4C4B4B" stroke="#E6E6E6"/>
+                </svg>
+              </span>
               <p>100%</p>
             </div>
             <div className='kosdaq_content'>
@@ -68,7 +72,11 @@ function Kosdaq() {
           
           <div className='kosdaq_info2'>
             <div className='kosdaq_title'>
-              <span></span>
+              <span>
+              <svg width="14" height="30" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <rect x="0.5" y="1" width="13" height="24" rx="1.5" fill="#4C4B4B" stroke="#E6E6E6"/>
+                </svg>
+              </span>
               <p>100%</p>
             </div>
             <div className='kosdaq_content'>

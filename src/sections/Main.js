@@ -95,20 +95,27 @@ animate();
 return (
 <>
 <div className="main">
-<div id="container">
-<span id="text1" ref={text1Ref}></span>
-<span id="text2" ref={text2Ref}></span>
-</div>
-<svg id="filters">
-<defs>
-<filter id="threshold" ref={filterRef}>
-<feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
-									0 1 0 0 0
-									0 0 1 0 0
-									0 0 0 255 -140" />
-		</filter>
-</defs>
-</svg>
+  <div id="container">
+    <span id="text1" ref={text1Ref}></span>
+    <span id="text2" ref={text2Ref}></span>
+  </div>
+  <svg id="filters">
+    <defs>
+    <filter id="threshold" ref={filterRef}>
+    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 255 -140" />
+        </filter>
+    </defs>
+  </svg>
+    <div className='scrolldown'>
+    <div className="chevron"></div>
+    <div className="chevron"></div>
+    <div className="chevron"></div>
+    <span className="text">Scroll</span>
+    </div>
+
 </div>
 
 </>

@@ -4,7 +4,88 @@
   @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
   box-sizing: border-box;
   border: 1px solid red;
- 
+  position: relative;
+ .scrolldown{
+
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  .chevron {
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+  
+  .chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+  
+  .chevron:before,
+  .chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #000;
+  }
+  
+  .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+  
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+  
+  @keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(23px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+  
+  .text {
+    display: block;
+    margin-top: 75px;
+    margin-left: -10px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #ABB2BF;
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
+    opacity: .25;
+    animation: pulse 2s linear alternate infinite;
+  }
+  
+  @keyframes pulse {
+    to {
+      opacity: 1;
+    }
+  }
+ }
 
 }
 
@@ -28,28 +109,10 @@ body {
   position: absolute;
   display: inline-block;
   font-family: "Raleway", sans-serif;
-  font-size: 80pt;
+  font-size: 8rem;
   text-align: center;
   user-select: none;
   left: 50%;
 }
 }
 
-.main2{
-  position: relative;
-  height: 100vh;
-  background-color: #000;
-  border: 1px solid blue;
-  .face_id{
-    width: 99vw;
-    position: absolute;
-    top: 25%;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
-.main3{
-  height: 100vh;
-  background-color: #000;
-}

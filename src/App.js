@@ -14,6 +14,7 @@ import Introduce from 'sections/Introduce';
 import Menu from 'sections/Menu';
 import Call from 'sections/Call';
 import { BrowserRouter } from 'react-router-dom';
+import Phone from 'sections/Phone';
 
 
 
@@ -27,6 +28,7 @@ function App() {
     <Face />
     <Settings />
     <Call />
+    <Phone />
     <Introduce />
     <Menu />
     <Home />
