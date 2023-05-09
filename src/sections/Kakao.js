@@ -33,7 +33,7 @@ function Kakao() {
           <div className='kakao_description'>
             <h3>Description</h3>
               <div className='kakao_des'>
-                <p>Firebase를 이용한 회원가입 및 로그인/로그아웃 기능</p>
+                <p className='kakao_p'>Firebase를 이용한 회원가입 및 로그인/로그아웃 기능</p>
                 <p>메시지 전송 및 사진 전송 기능 구현</p>
                 <p>프로필 사진 변경과 프로필 배경사진 변경과 상태메시지 변경 기능 구현</p>
                 <p>Hook함수 사용(useEffect, useState) </p>

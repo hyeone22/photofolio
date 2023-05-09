@@ -10,7 +10,7 @@ function Netflix() {
       <div className='netflix_section'>
         <div className='netflix_content'>
           <div className='netflix_header'>
-            <h2>NETFLIX APP</h2>
+            <h2 className='effect-shine'>NETFLIX APP</h2>
             <p>넷플릭스 앱 React 제작</p>
             <div className='netflix_skill'>
               <span>React</span>

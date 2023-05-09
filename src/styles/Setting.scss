@@ -99,3 +99,75 @@
   }
 
 }
+
+@media (max-width: 768px) {
+  .setting_main{
+   
+    .setting_header{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 3rem;
+      padding: 2rem;
+      svg{
+        margin: 2rem auto;
+        width: 50vw;
+        
+      }
+      .setting_text{
+        border: 1px solid red;
+  
+        h2{
+          color: #D1C7C7;
+          font-size: 3rem;
+          margin-bottom: 1rem;
+          b {
+            position: relative;
+            svg {
+                width: 14vw;
+                height: 12vh;
+                position: absolute;
+                left: 50%;
+                top: -200%;
+          
+            }
+            &:hover {
+  
+            }
+        }
+        }
+        p:first-of-type{
+          color: #D1C7C7;
+          font-size: 0.7rem;
+          margin-left: 1rem;
+          margin-bottom: 1rem;
+        }
+        span{
+          position: relative;
+          border: 3px solid #D1C7C7;
+          border-radius: 30px;
+          margin-left: 1rem;
+  
+        }
+        span:after{
+          content: "";
+          position: absolute;
+          border: 3px solid #6DC9F7;
+          border-radius: 30px;
+          transform: translateY(-3px)translateX(-3px); animation: ani1 5s ease-in-out 0.5s  infinite;
+  
+        }
+        @keyframes ani1 {
+          0%{width: 1%;}
+          100%{width: 100%;}
+          }
+        p:last-of-type{
+          color: #D1C7C7;
+          font-size: 3rem;
+          margin: 1rem 0 0 1rem;
+        }
+      }
+    }
+  
+  }
+}

@@ -371,9 +371,9 @@ function Introduce() {
           </div>       
         </div> 
         <div className='introduce_des'>
-          <h2>Information</h2>
+          <h2 className='typing-demo'>Information</h2>
           <p>안녕하세요 저는 프론트엔드 개발자를 꿈꾸는 예비 개발자 김승현 입니다. </p>  
-          <p>노력과 소통이 업무에서 중요한 부분을 차지함을 알기에 -- 하겠습니다. </p>
+          <p>노력과 소통이 업무에서 중요한 부분을 차지함을 알기에 노력하겠습니다. </p>
           <p>협업의 가치를 배워가는 개발자 --  되겠다 -- 뭐써야되지</p>
         </div>
       </div>  

@@ -1,87 +1,48 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../styles/Cj.scss';
 import Background from 'components/Background';
 import anime from 'animejs';
 
 function Cj() {
+  const h2Ref = useRef(null);
+  const [textShadow, setTextShadow] = useState('');
 
-  const folderContentRef = useRef(null);
-  const folderAmountRef = useRef(null);
-  const folderCollapseButtonRef = useRef(null);
-  const folderCollapseButtonIconRef = useRef(null);
-  const folderItemRefs = useRef([]);
+  useEffect(() => {
+    const h2 = h2Ref.current;
+    h2.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      h2.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
 
-  const toggleFolder = () => {
-    if (showFolderContentAnimation.began) {
-      showFolderContentAnimation.reverse();
-      if (
-        showFolderContentAnimation.progress === 100 &&
-        showFolderContentAnimation.direction === 'reverse'
-      ) {
-        showFolderContentAnimation.completed = false;
-      }
-    }
-
-    if (showFolderContentAnimation.paused) {
-      showFolderContentAnimation.play();
-    }
+  const handleMouseMove = e => {
+    const rXP = e.pageX - h2Ref.current.offsetLeft - h2Ref.current.offsetWidth / 3;
+    const rYP = e.pageY - h2Ref.current.offsetTop - h2Ref.current.offsetHeight / 2;
+    setTextShadow(
+      `${rYP / 550}px ${rXP / 80}px rgba(227,6,19,.8), 
+       ${rYP / 500}px ${rXP / 60}px rgba(255,237,0,1), 
+       ${rXP / 30}px ${rYP / 800}px rgba(0,159,227,.7)`
+    );
   };
 
-  const showFolderContentAnimation = anime.timeline({
-    easing: 'easeOutCubic',
-    autoplay: false
-  });
+  const [isHeaderClicked, setIsHeaderClicked] = useState(false);
 
-  showFolderContentAnimation
-    .add({
-      targets: folderContentRef.current,
-      height: [0, 240],
-      duration: 350
-    })
-    .add(
-      {
-        targets: folderAmountRef.current,
-        opacity: [1, 0],
-        duration: 400
-      },
-      '-=350'
-    )
-    .add(
-      {
-        targets: folderCollapseButtonRef.current,
-        opacity: [0, 1],
-        duration: 400
-      },
-      '-=300'
-    )
-    .add(
-      {
-        targets: folderCollapseButtonIconRef.current,
-        duration: 300,
-        translateX: ['-50%', '-50%'],
-        translateY: ['-50%', '-50%'],
-        rotate: ['0deg', '180deg']
-      },
-      '-=400'
-    )
-    .add(
-      {
-        targets: folderItemRefs.current,
-        translateY: [20, 0],
-        opacity: [0, 1],
-        duration: 300,
-        delay: (el, i, l) => i * 120
-      },
-      '-=275'
-    );
+  const handleHeaderClick = () => {
+    setIsHeaderClicked(prevState => !prevState);
+  };
+
+  const sectionStyle = {
+    backgroundColor: isHeaderClicked ? 'rgba(82, 82, 82, 1)' : 'black'
+  };
+
   return (
     <div className='cj_main'>
       <Background />
-      <div className='cj_section'>
+      <div className='cj_section' style={sectionStyle}>
         <div className='cj_header'>
-        <span></span>
-        <span></span> 
-        <span></span>   
+        <span onClick={handleHeaderClick}></span>
+        <span onClick={handleHeaderClick}></span> 
+        <span onClick={handleHeaderClick}></span>   
         </div>
         <div className='cj_movie'>
           <div className='movie_section'>
@@ -89,11 +50,11 @@ function Cj() {
           </div>
         </div>
         <div className='cj_title'>
-          <h2>CJ ONE</h2>
+          <h2 ref={h2Ref} style={{textShadow}}>CJ ONE</h2>
           <span>100%</span>
         </div>
         <p>CJ ONE 웹 사이트의 PC, Tablet, Mobile등 디바이스의 해상도에 맞는 반응형 웹 사이트 제작</p>
-        
+       
       </div>
     </div>
   )

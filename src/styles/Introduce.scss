@@ -135,6 +135,26 @@
       color: #fff;
       font-weight: bold;
     }
+    .typing-demo {
+      width: 9.5ch;
+      animation: typing 3s steps(22) alternate infinite, blink 0.5s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-size: 3em;
+    }
+    
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
+    
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
     p{
       color: #fff;
       line-height: 1.5;
@@ -142,4 +162,13 @@
     }
   }
 }
+}
+
+@media (max-width: 768px){
+  .introduce_text{
+    height: 40.1vh !important;
+  }
+  .face{
+    height: 50vh !important;
+  }
 }

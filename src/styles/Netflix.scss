@@ -28,6 +28,19 @@
           color: #fff;
           font-size: 5rem;
           font-weight: bold;
+          mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+          mask-size: 200%;
+          animation: shine 2s infinite;
+        }
+        
+        @keyframes shine {
+          from {
+            mask-position: 150%;
+          }
+          
+          to {
+            mask-position: -50%;
+          }
         }
         p{
           font-size: 1rem;
@@ -38,13 +51,16 @@
         .netflix_skill{
           display: flex;
           flex-direction: row;
+          flex-wrap: wrap;
           padding-top: 2rem;
+         
           span{
             border: 1px solid #ABB2BF;
             padding: 0.5rem;
             margin-right: 1rem;
             color: #ABB2BF;
             font-weight: 500;
+            margin-bottom: 1rem;
           }
         }
       }
@@ -93,4 +109,24 @@
       right: 0;
     }
   }
+}
+@media (max-width: 768px) {
+  .netflix_main{
+    .netflix_section{
+      display: flex !important;
+      flex-direction: column !important;
+      .netflix_content{
+        width: 100%;
+        height: 42vh;
+      }
+      .netflix_movie{
+        width: 100%;
+        height: 48vh;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+
+
 }

@@ -46,6 +46,7 @@
             font-size: 1.2rem;
             padding: 0.4rem;
           }
+          
         }
         p{
           font-size: 1rem;
@@ -58,6 +59,7 @@
         margin-left: 1rem;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         span{
           border: 1px solid #ABB2BF;
           padding: 0.5rem;
@@ -96,8 +98,9 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        right: 2%;
         bottom: 7%;
+        right: 5%;
+        
         h3{
           color: #ABB2BF;
           font-weight: bold;
@@ -108,6 +111,7 @@
           width: 30vw;
           padding: 1rem;
           background-color: #036825;
+          
           p{
             color: #fff;
             font-size: 1rem;
@@ -132,4 +136,38 @@
       }
     }
   }
+}
+@media (max-width: 768px) {
+ .kakao_movie{
+  background: url(../images/iphone.png)no-repeat 50% 50% / cover !important;
+  width: 40% !important;
+ } 
+ .kakao_container{
+  width: 60% !important;
+  .kakao_skill{
+    span{
+      margin-bottom: 0.5rem !important;
+    }   
+  }
+  .kakao_overview{
+    h3{
+      font-size: 1.5rem !important;
+    }
+    p{
+      width: 42vw !important;
+    }
+  }
+  .kakao_description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  h3{
+    font-size: 1.5rem !important;
+  }
+  .kakao_des{
+    width: 41vw !important;
+    margin-bottom: 10rem !important;
+  }
+ }
 }

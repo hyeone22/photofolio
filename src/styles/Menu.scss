@@ -83,8 +83,11 @@
       margin: 1rem 0;
       background-color: #888;
       border-radius: 20px;
+      position: relative;
       .now{
         color: #ABB2BF;
+        position: absolute;
+        right: 5%;
       }
       .menu_text{
         display: flex;
@@ -107,5 +110,14 @@
       }
       
     }
+  }
+}
+@media (max-width: 768px){
+  .menu_time{
+    margin-top: 14rem !important;
+  }
+  .menu_bar{
+    width: 80% !important;
+    margin: 10rem auto !important;
   }
 }

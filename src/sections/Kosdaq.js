@@ -20,7 +20,7 @@ function Kosdaq() {
 
           <div className='kosdaq_titles'>
             <p>Fuel your mind</p>
-            <h2>코스닥 글로벌 <b>↑기여도 (100%)</b></h2>
+            <h2 className='center__text glitch' data-text="코스닥 글로벌">코스닥 글로벌 <b>↑기여도 (100%)</b></h2>
             <span>코스닥 글로벌 웹 사이트의 PC, Tablet, Mobile등 디바이스의 해상도에 맞는 반응형 웹 사이트 제작</span>  
           </div> 
 
@@ -72,12 +72,12 @@ function Kosdaq() {
           
           <div className='kosdaq_info2'>
             <div className='kosdaq_title'>
-              <span>
+              <span className='k1'>
               <svg width="14" height="30" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <rect x="0.5" y="1" width="13" height="24" rx="1.5" fill="#4C4B4B" stroke="#E6E6E6"/>
                 </svg>
               </span>
-              <p>100%</p>
+              <p className='p1'>100%</p>
             </div>
             <div className='kosdaq_content'>
             <h3>Project Technology</h3>

@@ -52,14 +52,20 @@
   .off_call{
     margin-top: 2rem;
     color: #000;
-    font-weight: 500;
+    font-weight: bold;
     width: 5%;
     border: 1px solid red;
     font-size: 1rem;
     padding: 1rem;
     text-align: center;
     align-self: center;
-    background-color: #fff;
     border-radius: 10px;
+    background: #f0f0f0;
+    box-shadow:  0 0 0 #cccccc,
+                   0 0 0 #ffffff,
+                    10px 10px 10px #cccccc inset,
+                    -10px -10px 10px #ffffff inset;
   }
+  
+
 }

@@ -60,14 +60,62 @@
           font-size: 1rem; 
           font-weight: 600; 
         }
-        h2{
+        .glitch{
           color: #fff;
           font-size: 3rem;
           font-weight: bold;
+          mix-blend-mode: lighten;
+          position: relative;
+          &:before,
+          &:after {
+              content: attr(data-text);
+              position: absolute;
+              
+              width: 100%;
+              background: black;
+              clip: rect(0, 0, 0, 0);
+          }
+          
+          &:before {
+              left: -1px;
+              text-shadow: 1px 0 rgba(red,0.7);
+          }
+        
+          &:after {
+              left: 1px;
+              text-shadow: -1px 0 rgba(blue,0.7);
+          }
+        
+          &:hover {
+            &:before {
+              text-shadow: 4px 0 rgba(red,0.7);
+              animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse;
+            }
+            &:after {
+              text-shadow: -5px 0 rgba(blue,0.7);
+              animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
+            }
+          }
+
           b{
             color: #5ECCA3;
             font-size: 1rem;
           }
+        }
+        @keyframes glitch-loop-1 {
+          0% { clip: rect(36px, 9999px, 9px, 0) }
+          25% { clip: rect(25px, 9999px, 99px, 0) }
+          50% { clip: rect(50px, 9999px, 102px, 0) }
+          75% { clip: rect(30px, 9999px, 92px, 0) }
+          100% { clip: rect(200px, 9999px, 98px, 0) }
+        }
+        
+        @keyframes glitch-loop-2 {
+          0% { top: -1px; left: 1px; clip: rect(65px, 9999px, 119px, 0) }
+          25% { top: -6px; left: 4px; clip: rect(79px, 9999px, 19px, 0) }
+          50% { top: -3px; left: 2px; clip: rect(68px, 9999px, 11px, 0) }
+          75% { top: 0px; left: -4px; clip: rect(95px, 9999px, 53px, 0) }
+          100% { top: -1px; left: -1px; clip: rect(31px, 9999px, 149px, 0) }
         }
         span{
           font-size: 0.9rem;
@@ -240,5 +288,70 @@
         }
       }
     }
+  }
+}
+@media (max-width: 768px){
+  .kosdaq_search{
+    height: 4vh !important;
+    margin-top: 2rem !important;
+  }
+  .kosdaq_titles{
+    height: 15vh !important;
+    .glitch{
+      font-size: 2.4rem !important;
+      margin-bottom: 2rem !important;
+    }
+    span{
+      font-size: 1.4rem !important;
+    }
+  }
+  .kosdaq_skill{
+    .kosdaq_built{
+      align-items: center !important;
+      margin-bottom: 2rem !important;
+    } 
+    p:nth-child(2){
+      left: 70% !important;
+      top: 30.5% !important;
+      font-size: 0.8rem !important;
+    } 
+    p:nth-child(3){
+      left: 70% !important;
+      top: 31.5% !important;
+      font-size: 0.2rem !important;  
+    }
+  }
+  .kosdaq_index{
+    margin: 0 auto !important;
+
+  
+  }
+
+  .kosdaq_title{
+
+    span{
+
+      margin-right: 0rem !important;
+
+      svg{
+        margin: 0.2rem auto !important;
+        display: block;
+
+        
+      }
+    }
+    p{
+      color: #fff;
+      font-size: 2rem !important;
+      margin-left: 1rem !important;
+    }
+  }
+  .kosdaq_content{
+    h3{
+      font-size: 1.4rem !important;
+    }
+  }
+  .kosdaq_footer{
+    padding-top: 3rem !important;
   }
 }
