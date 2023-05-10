@@ -6,13 +6,29 @@ import Header from 'components/Header';
 function Kakao() {
   return (
     <div className='kakao_main'>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 0 0" width="0" height="0" style={{display:'none'}}>
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 13 -6" result="goo" />
+    </filter>
+  </defs>
+    </svg>
       <Background />
       <div className='kakao_section'>
         <div className='kakao_movie'>  
         </div>
         <div className='kakao_container'>
           <div className='kakao_header'>
-          <h2>KAKAOTALK APP<span>100%</span></h2>
+          <div class="goo">
+              <h1>KAKAKOTALK APP</h1>
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+          </div>
           <p>카카오톡 React 앱 제작</p>
           </div>
           <div className='kakao_skill'>
@@ -45,7 +61,7 @@ function Kakao() {
                 <p>Swiper 라이브러리로 친구기능의 스와이프 구현</p>
               </div>
             </div>
-            <div className='kakao_nav'>
+            <div className='kakao_nav type3'>
               <span>Repository</span>
               <span>Page</span>
             </div>

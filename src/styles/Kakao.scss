@@ -19,7 +19,7 @@
     .kakao_movie{
       margin-top: 1rem;
       width: 23%;
-      height: 83vh;
+      height: 85vh;
       border: 1px solid red;
       background: url(../images/iphone.png)no-repeat 50% 50% / contain;
     }
@@ -29,47 +29,110 @@
       margin-top: 1rem;
       margin-left: 1rem;
       width: 70vw;
-      height: 83vh;
+      height: 85vh;
       border: 1px solid red;
       .kakao_header{
         display: flex;
         flex-direction: column;
         padding: 1rem;
-        h2{
-          font-size: 4.5rem;
-          font-weight: bold;
-          
-          span{
-            color: #F8D323;
-            border: 1px solid #F8D323;
-            font-weight: 400;
-            font-size: 1.2rem;
-            padding: 0.4rem;
+ 
+        .goo {
+          position: relative;
+          width: 100%;
+          margin: 0 auto;
+          filter: url(#goo);
+          h1 {
+            font-weight: bold;
+            font-size: 7rem;
+            color: rgba(250, 206, 0, 1);
+            text-shadow: 1px 1px 0 #002d54;
+          }  
+          .drop {
+            opacity: 0;
+            width: 30px;
+            height: 40px;
+            background: rgba(250, 206, 0, 1);
+            border-radius: 1000px;
+            position: absolute;
+            animation: drip 7s infinite;
+            border: 2px solid #002d54;
+            border-top: none;
+            top: 0;
+            left: 700px;
+          }
+          .drop:nth-child(2) {
+            left: 300px;
+            animation-delay: 3s;
+          }
+          .drop:nth-child(3) {
+            left: 500px;
+            animation-delay: 2s;
+          }
+          .drop:nth-child(4) {
+            left: 700px;
+            animation-delay: 4s;
+          }
+          .drop:nth-child(5) {
+            left: 955px;
+            animation-delay: 1.5s;
+          }
+          .drop:nth-child(6) {
+            left: 150px;
+            animation-delay: 5s;
           }
           
+          @keyframes drip {
+            0% {
+              opacity: 0;
+              transform: translateY(0);
+            }
+            35% {
+              opacity: 1;
+              transform: translateY(30px);
+            }
+            50% {
+              transform: translateY(100vh);
+            }
+            100% {
+              transform: translateY(100vh);
+            }
+          }
         }
+        
+
         p{
           font-size: 1rem;
           color: #ABB2BF;
           font-weight: 550;
+          margin-left: 1rem;
         }
       }
       .kakao_skill{
         margin-top: 1rem;
-        margin-left: 1rem;
+        margin-left: 2rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        box-sizing: border-box;
         span{
           border: 1px solid #ABB2BF;
           padding: 0.5rem;
           margin-right: 1rem;
           color: #ABB2BF;
           font-weight: 500;
+          transition: .3s ease-in-out;
+          cursor: pointer;
+          box-sizing: border-box;
+          &:hover{
+            box-shadow: inset 6.5em 0 0 0 white;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+          }
         }
       }
       .kakao_date{
-        margin: 3rem 1rem;
+        margin: 3rem 2rem;
         span{
           border: 1px solid #ABB2BF;
           padding: 0.7rem;
@@ -79,10 +142,16 @@
       .kakao_overview{
         display: flex;
         flex-direction: column;
-        margin-left: 1rem;
+        margin-left: 2rem;
         h3{
           color: #ABB2BF;
           font-weight: bold;
+          transition: .3s ease-in-out;
+          width: 5vw;
+          &:hover{
+            box-shadow: inset 6.5em 0 0 0 white;
+          
+          }
         }
         p{
           border: 1px solid red;
@@ -98,13 +167,18 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        bottom: 7%;
-        right: 5%;
+        bottom: 1%;
+        right: 2%;
         
         h3{
           color: #ABB2BF;
           font-weight: bold;
           padding-bottom: 0.5rem;
+          transition: .3s ease-in-out;
+          width: 5vw;
+          &:hover{
+            box-shadow: inset 6.5em 0 0 0 white;
+          }
         }
         .kakao_des{
           border-radius: 20px;
@@ -126,6 +200,7 @@
         position: absolute;
         bottom: 5%;
         padding-left: 1rem;
+
         span{
           border: 1px solid #ABB2BF;
           padding: 0.5rem;
@@ -146,28 +221,120 @@
   width: 60% !important;
   .kakao_skill{
     span{
-      margin-bottom: 0.5rem !important;
+      margin-bottom: 1rem !important;
     }   
   }
   .kakao_overview{
+    margin-top: 2rem !important;
     h3{
       font-size: 1.5rem !important;
+       &:hover{
+      width: 15vw !important;
     }
+    }
+   
     p{
-      width: 42vw !important;
+      width: 40vw !important;
     }
   }
   .kakao_description{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
   }
   h3{
     font-size: 1.5rem !important;
+    &:hover{
+      width: 17vw !important;
+    }
   }
   .kakao_des{
     width: 41vw !important;
     margin-bottom: 10rem !important;
   }
  }
+ .goo{
+  filter: none !important;
+  h1{
+    font-size: 2.5rem !important;
+    color: #fff !important;
+    margin-left: 1rem !important;
+    margin-top: 3rem !important; 
+  }
+  .drop{
+    display: none !important;
+  }
+ }
+}
+
+
+@media (min-width:1200px) and (max-width:1399px) {
+  .kakao_main{
+    .kakao_section{
+      .kakao_movie{
+
+      }
+      .kakao_container{
+        .kakao_header{
+          .goo{
+            h1{
+              font-size: 7rem;
+            }
+          }
+        }
+      }
+    }
+  }  
+
+}
+
+@media (min-width: 1400px) and (max-width:1695px) {
+  .kakao_main{
+    .kakao_section{
+      .kakao_movie{
+
+      }
+      .kakao_container{
+        .kakao_header{
+          .goo{
+            h1{
+              font-size: 5rem;
+            }
+          }
+        }
+      }
+    }
+  }  
+}
+@media (min-width: 1696px) and (max-width:1924px) {
+  .kakao_main{
+    .kakao_section{
+      .kakao_movie{
+
+      }
+      .kakao_container{
+        .kakao_header{
+          .goo{
+            h1{
+            }
+          }
+        }
+        .kakao_skill{
+
+        }
+        .kakao_date{
+
+        }
+        .kakao_overview{
+          p{
+            width: 30vw;
+            padding: 1rem;
+          }
+        }
+        .kakao_description{
+
+        }
+      }
+    }
+  }  
 }

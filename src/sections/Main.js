@@ -115,6 +115,16 @@ return (
     <div className="chevron"></div>
     <span className="text">Scroll</span>
     </div>
+    {/* <div class="ball" data-splitting>
+  <div class="ball-top"></div>
+</div>
+
+<div class="phrase" data-splitting="items">
+  <span class="word slide" data-splitting="chars">Scroll</span>
+  <span class="word slide" data-splitting="chars">Scroll</span>
+  <span class="word slide" data-splitting="chars">Scroll</span>
+  <span class="word smiley" data-splitting="chars">:)</span>
+</div> */}
 
 </div>
 

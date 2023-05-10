@@ -9,7 +9,7 @@
   box-sizing: border-box;
   .netflix_section{
     width: 100%;
-    height: 87vh;
+    height: 90vh;
     border: 1px solid red;
     display: flex;
     flex-direction: row;
@@ -17,7 +17,7 @@
       display: flex;
       flex-direction: column;
       width: 48%;
-      height: 87vh;
+      height: 90vh;
       border: 1px solid blue;
       .netflix_header{
         display: flex;
@@ -25,12 +25,12 @@
         padding: 3rem;
         line-height: 1;
         h2{
-          color: #fff;
+          color: rgba(217, 95, 95, 1);
           font-size: 5rem;
           font-weight: bold;
           mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
           mask-size: 200%;
-          animation: shine 2s infinite;
+          animation: shine 2s alternate infinite;
         }
         
         @keyframes shine {
@@ -61,10 +61,19 @@
             color: #ABB2BF;
             font-weight: 500;
             margin-bottom: 1rem;
+            transition: .3s ease-in-out;
+            box-sizing: border-box;
+            &:hover{
+              box-shadow: inset 0 0 0 2em rgba(222, 48, 48, 1);
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+            }
           }
         }
       }
       .netflix_desc{
+        border: 1px solid purple;
         display: flex;
         flex-direction: column;
         padding: 0 3rem 3rem 3rem;
@@ -117,11 +126,28 @@
       flex-direction: column !important;
       .netflix_content{
         width: 100%;
-        height: 42vh;
+        height: 45vh;
+        .netflix_header{
+          h2{
+            font-size: 6.5rem;
+          }
+          p{
+            font-size: 1.8rem;
+          }
+        }
+        .netflix_desc{
+          
+          h3{
+            font-size: 3rem;
+          }
+          p{
+            font-size: 1.7rem;
+          }
+        }
       }
       .netflix_movie{
         width: 100%;
-        height: 48vh;
+        height: 45vh;
         position: absolute;
         bottom: 0;
       }

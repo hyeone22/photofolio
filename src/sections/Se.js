@@ -46,7 +46,7 @@ function Se() {
       
       <div className='se_section'>
         <div className='se_head'>
-          <h2>삼성전기</h2>
+          <h2 className='spread-out'>삼성전기</h2>
           <p>Web Accessibility & Standard</p>
           <span></span>
         </div>
@@ -54,7 +54,7 @@ function Se() {
           <div className='se_content'>
             <div className='se_con1'>
               <div className='se_title'>
-                <h3>Built</h3>
+                <h3 className='se_h3'>Built</h3>
                 <p>2023.00.00</p>  
               </div>
               <div className='se_skill'>
@@ -73,7 +73,7 @@ function Se() {
             </div>
             <div className='se_con2'>
             <div className='se_title'>
-                <h3>Work</h3> 
+                <h3 className='se_h3'>Work</h3> 
                 <p>삼성전기의 웹 사이트를 웹 접근성 지침과 
                     웹 표준성을 준수하여 제작</p>
                 <p>리뉴얼된 삼성전기 홈페이지의 인터렉션과
@@ -96,7 +96,7 @@ function Se() {
             </div>
             <div className='se_con3'>
               <div className='se_title'>
-                <h3>Project Info</h3>
+                 <h3 className='se_h3'>Project Info</h3>
                 <p>2023.00.00</p>
                 <p>HTML/CSS/W3C/SEO 웹 접근성 검사 첨부</p>
               </div>

@@ -5,10 +5,9 @@
   box-sizing: border-box;
   background: #000;
   position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
   .con1{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     z-index: 10;
@@ -19,6 +18,7 @@
     width: 15.2%;
     height: 43vh;
     border-radius: 15px;
+    
     .picture{
       background: url(../images/main_video_thum2.jpg)no-repeat 0 0 / cover;
       width: 15vw;
@@ -65,13 +65,16 @@
           border: 2px solid #C778DD;
           padding: 0.6rem 2rem;
           margin-right: 1rem;
-           
+
         }
         span:last-child{
           border: 2px solid #ABB2BF;
           color: #ABB2BF;
           padding: 0.6rem 2rem;
         }
+    }
+    &:hover{
+      
     }
   }
   .con2{
@@ -466,6 +469,9 @@
     }
   }
 }
+
+
+
 
 @media (max-width: 768px) {
   .home_main{

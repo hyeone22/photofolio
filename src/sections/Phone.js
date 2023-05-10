@@ -8,7 +8,7 @@ function Phone() {
     <div className='phone_main'>
       <Header />
       <div className='phone_header'>
-        <h2>김승현</h2>  
+        <h2 className='fall-out'>김승현</h2>  
       </div>
       <div className='phone_icon'>
         <div className='phone_icons'>
