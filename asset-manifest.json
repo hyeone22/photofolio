@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/photofolio/static/css/main.31620ef1.css",
-    "main.js": "/photofolio/static/js/main.1a22a551.js",
+    "main.css": "/photofolio/static/css/main.bf610bb3.css",
+    "main.js": "/photofolio/static/js/main.91a725e5.js",
     "static/media/Background.png": "/photofolio/static/media/Background.6d85c812f8fb2f47d86b.png",
     "static/media/netflix.png": "/photofolio/static/media/netflix.b1712d5cede9c55d829e.png",
     "static/media/frame1.png": "/photofolio/static/media/frame1.e5768816dded79f917c6.png",
@@ -12,11 +12,11 @@
     "static/media/main_video_thum2.jpg": "/photofolio/static/media/main_video_thum2.be827b95f6574a4c63f4.jpg",
     "static/media/kakao.jpg": "/photofolio/static/media/kakao.9785ba2591a3bedee686.jpg",
     "index.html": "/photofolio/index.html",
-    "main.31620ef1.css.map": "/photofolio/static/css/main.31620ef1.css.map",
-    "main.1a22a551.js.map": "/photofolio/static/js/main.1a22a551.js.map"
+    "main.bf610bb3.css.map": "/photofolio/static/css/main.bf610bb3.css.map",
+    "main.91a725e5.js.map": "/photofolio/static/js/main.91a725e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.31620ef1.css",
-    "static/js/main.1a22a551.js"
+    "static/css/main.bf610bb3.css",
+    "static/js/main.91a725e5.js"
   ]
 }
