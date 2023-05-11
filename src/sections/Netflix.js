@@ -2,6 +2,8 @@ import React from 'react';
 import '../styles/Netflix.scss';
 import Background from 'components/Background';
 import Header from 'components/Header';
+import { FaGithub,FaPlay } from "react-icons/fa";
+
 
 function Netflix() {
   return (
@@ -31,8 +33,9 @@ function Netflix() {
             <p>Swiper 라이브러리로 영화배열의 스와이프 기능 구현</p>
           </div>
           <div className='netflix_nav'>
-            <span>Play App</span>
-            <span>More Github</span>
+            <span><i><FaPlay /></i>Play App</span>
+            <span><i><FaGithub /></i>More Github</span>
+            
           </div>
         </div>
         <div className='netflix_movie'>

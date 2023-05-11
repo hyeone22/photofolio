@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/Se.scss';
 import Background from 'components/Background';
+import video from '../video/se_pc.mp4';
+
 
 function Se() {
   const [load, setLoad] = useState(0);
@@ -119,8 +121,12 @@ function Se() {
             </div>
           </div>
          
-          <div className='se_movie'>  
-        
+          <div className='se_movie'> 
+           
+          <video className='se_pc' src={video}
+           muted autoPlay loop 
+           allowfullscreen>  
+          </video>
         </div>
         </div>
 

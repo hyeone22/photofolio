@@ -38,7 +38,7 @@
     .cj_movie{
       background-color: rgba(28, 28, 30, 1);
       width: 70vw;
-      height: 50vh;
+      height: 43vh;
       
     }
     .cj_title{
@@ -46,10 +46,12 @@
       flex-direction: row;
       justify-content: center;
       align-items: baseline;
+
       h2{
         font-size: 9rem;
         font-weight: bold;
-        color: rgba(113, 113, 113, 1);
+        color: #fff;
+        
       }
       span{
         color: #fff;
@@ -58,17 +60,110 @@
           font-size: 1rem;
           padding: 0.4rem;
       }
-    }
-   
+    } 
     p{
       color: #ABB2BF;
       font-weight: 600;
       font-size: 1rem;
       position: absolute;
-      right: 5%;
-      top: 81%;
+      right: 1%;
+      top: 75%;
+    }
+    blockquote {
+      position: relative;
+      padding-bottom: 1rem;
+      font-size: 2rem;
+      color: #303030;
+      background: conic-gradient(from 180deg at 100% calc(100% - 1rem), #303030 0 25%, #fff0 0 100%), conic-gradient(from 180deg at 1rem 50%, #303030 0 25%, #fff0 0 100%), conic-gradient(from 0deg at calc(100% - 1rem) 50%, #303030 0 25%, #fff0 0 100%), conic-gradient(from 0deg at 0rem 1rem, #303030 0 25%, #fff0 0 100%);
+      border: 1px solid blue;
+    } 
+    blockquote:before, 
+    blockquote:after {
+      content: "";
+      position: absolute;
+      width: 3.5rem;
+      height: 4.5rem;
+      top: 3rem;
+      left: -1rem;
+      transform: rotate(5deg) scale(1.15);
+      background: 
+        radial-gradient(circle at 1.75rem 3rem, #303030 1.5rem, #fff0 calc(1.5rem + 1px)), 
+        radial-gradient(circle at 3.5rem 1.5rem, #fff0 2rem, #303030 calc(2rem + 1px) calc(4rem + 1px), #fff0 calc(4rem + 2px));
+      filter: drop-shadow(3.5rem -0.5rem 0px #303030);
+      border-radius: 100%;
     }
     
+    blockquote:after {
+      top: inherit;
+      bottom: 3rem;
+      transform: rotate(195deg) scale(1.15);
+      right: -1rem;
+      left: inherit;
+    }
+    .faq {
+
+      list-style: none;
+      background-color: #000;
+      padding-left: 4rem;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .faq li.active .answer {
+      max-height: 275px !important;
+      padding-bottom: 20px;
+      transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+    }
+    .faq li.active .question {
+      color: #808080;
+      transition: color 0.5s ease;
+    }
+    .faq .answer {
+      color: #fff;
+      font-size: 1rem;
+      line-height: 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+    }
+    .faq .plus-minus-toggle {
+      cursor: pointer;
+      height: 21px;
+      position: absolute;
+      width: 21px;
+      left: -40px;
+      top: 50%;
+      z-index: 2;
+    }
+    .faq .plus-minus-toggle:before, .faq .plus-minus-toggle:after {
+      background: #fff;
+      content: '';
+      height: 5px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 21px;
+      transition: transform 500ms ease;
+    }
+    .faq .plus-minus-toggle:after {
+      transform-origin: center;
+    }
+    .faq .plus-minus-toggle.collapsed:after {
+      transform: rotate(90deg);
+    }
+    .faq .plus-minus-toggle.collapsed:before {
+      transform: rotate(180deg);
+    }
+    .faq .question {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      position: relative;
+      cursor: pointer;
+      padding: 20px 0;
+      transition: color 0.5s ease;
+    }  
+
   }
   .cj_section.toggled {
     background-color: #ccc;
@@ -95,14 +190,28 @@
      
         }
         span{
-
+          padding: 0.5rem;
         }
       }
       p{
-        top: 75%;
+        top: 67%;
         font-size: 0.9rem;
-        left: 35%;
+        left: 20%;
         
+      }
+      blockquote{
+        padding-bottom: 4rem;
+      }
+      blockquote:after{
+        bottom: 1rem;
+        right: -2rem;
+      }
+      blockquote:before{
+        top: 2rem;
+        left: -2rem;
+      }
+      .faq{
+        padding-left: 7rem;
       }
     }
   }

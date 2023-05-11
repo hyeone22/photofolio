@@ -124,7 +124,7 @@
           cursor: pointer;
           box-sizing: border-box;
           &:hover{
-            box-shadow: inset 6.5em 0 0 0 white;
+            box-shadow: inset 12em 0 0 0 white;
             border: none;
             border-radius: 5px;
             box-sizing: border-box;
@@ -213,6 +213,7 @@
   }
 }
 @media (max-width: 768px) {
+
  .kakao_movie{
   background: url(../images/iphone.png)no-repeat 50% 50% / cover !important;
   width: 40% !important;

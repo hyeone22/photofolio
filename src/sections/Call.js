@@ -1,13 +1,16 @@
 import React from 'react'
 import '../styles/Call.scss';
-import Header from 'components/Header';
-import Paper from 'components/Paper';
+import Background from 'components/Background';
+import { Link } from 'react-router-dom';
+import Se from './Se';
+import Cj from './Cj';
 
 function Call() {
   return (
     <div className='call_main'>
-    <Header />
     <div class="container">
+    <Background />
+    <h2>Home</h2>
   <aside class="carousel">
     <div class="carousel__wrapper">
       <div class="item" id="slide-0">

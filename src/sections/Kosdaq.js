@@ -50,6 +50,7 @@ function Kosdaq() {
               </div>   
             </div>   
           </div> 
+          
           <div className='kosdaq_layout'>
             <div className='kosdaq_info'>
               <div className='kosdaq_title'>

@@ -43,6 +43,7 @@
           font-size: 1rem;
           color: #767574;
           text-align: center;
+
         }
       }
       .kosdaq_titles{
@@ -177,13 +178,13 @@
           color: #7197F8;
           font-size: 0.7rem;
           margin-right: 1rem;
+          
         }
 
         .kosdaq_html{
           display: flex;
           flex-direction: row;
           padding-bottom: 1rem;
-  
         }
         .kosdaq_css{
           display: flex;
@@ -196,7 +197,6 @@
           padding-bottom: 1rem;
         }  
       }
-
       .kosdaq_layout{
         width: 42vw;
         height: 40vh;
@@ -204,7 +204,7 @@
         flex-direction: row;
         justify-content: space-between;
         margin: 1rem auto;
-        border: 1px solid green;
+
 
         .kosdaq_info{
           width: 18vw;
@@ -248,6 +248,9 @@
         p{
           color: #fff;
           font-size: 2.5rem;
+          font-weight: bold;
+          align-self: center;
+          
         }
       }
       .kosdaq_content{
@@ -287,10 +290,12 @@
 @media (max-width: 768px){
   .kosdaq_main{
     .kosdaq_section{
-      flex-direction: column;
+      flex-direction: column-reverse; 
       .kosdaq_movie{
         width: 95%;
-        height: 40vh;
+        height: 41vh;
+        border: 1px solid orange;
+        margin: 0 auto;
       }
       .kosdaq_container{
         width: 95%;
@@ -298,6 +303,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
+        
         .kosdaq_search{
           width: 95%;
           height: 4vh; 
@@ -306,7 +313,7 @@
         .kosdaq_titles{
           height: 18vh;
           margin: 0;
-
+          width: 45%;
           .glitch{
             font-size: 2rem;
             margin-bottom: 2rem;
@@ -316,7 +323,8 @@
           }
         }
         .kosdaq_skill{
-          flex: 1;
+          width: 45%;
+          margin: 0;
           .kosdaq_built{
             h2{
               font-size: 2rem;
@@ -328,85 +336,32 @@
          
         }
         .kosdaq_layout{
-          border: 1px solid blue;
-
+          width: 100%;
           display: flex;
           flex-direction: row;
-          justify-content: left;
-          box-sizing: border-box;
-          flex-wrap: wrap;
-          margin: 0;
-          height: 40vh;
           .kosdaq_info{
- 
+            width: 45%;
+            height: 60%;
           }
           .kosdaq_info2{
-
+            width: 45%;
+            height: 60%;
+            
           }  
           .kosdaq_title{
 
           }
           .kosdaq_content{
-            height: 10vh;
+            height: 16vh;
           }
           .kosdaq_footer{
-
+      
           }
         }
       }
     }
   }
 
-
-
-
-  .kosdaq_index{
-    margin: 0 auto !important;
-
-  
-  }
-  .kosdaq_layout{
-    flex-direction: column !important;
-    width: 50vw !important;
-   
-  }
-  .kosdaq_info{
-    width: 40vw !important;
-    margin: 0 auto !important;
-  }
-  .kosdaq_info2{
-    width: 40vw !important;
-    margin: 1rem auto !important;
-  }
-
-
-  .kosdaq_title{
-
-    span{
-
-      margin-right: 0rem !important;
-
-      svg{
-        margin: 0.2rem auto !important;
-        display: block;
-
-        
-      }
-    }
-    p{
-      color: #fff;
-      font-size: 2rem !important;
-      margin-left: 1rem !important;
-    }
-  }
-  .kosdaq_content{
-    h3{
-      font-size: 1.4rem !important;
-    }
-  }
-  .kosdaq_footer{
-    padding-top: 3rem !important;
-  }
 }
 @media (min-width:769px) and (max-width:1399px) {
   .kosdaq_skill{
