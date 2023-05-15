@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/Call.scss';
 import Background from 'components/Background';
-import { Link } from 'react-router-dom';
-import Se from './Se';
-import Cj from './Cj';
+import '../styles/Menu.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Call() {
+
+  useEffect(() => {
+    AOS.init();
+  },[]);
+
+
   return (
     <div className='call_main'>
     <div class="container">
     <Background />
-    <h2>Home</h2>
+    <h2  data-aos="fade-right">Home</h2>
   <aside class="carousel">
     <div class="carousel__wrapper">
       <div class="item" id="slide-0">

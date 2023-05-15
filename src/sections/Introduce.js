@@ -1,14 +1,23 @@
 import Header from 'components/Header';
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Introduce.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Introduce() {
+
+  useEffect(() => {
+    AOS.init();
+  },[]);
   return (
-    <div className='introduce_main'>
+    <div className='introduce_main'
+    data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="0">
         <Header />
       <div className='introduce_face'>
-      
-     
+    
 
       <svg className='face' width="737" height="456" viewBox="0 0 737 456" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_dd_0_1)">

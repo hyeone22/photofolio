@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
-import '../styles/Face.scss'
-import Header from 'components/Header'
+import React, { useState,useEffect } from 'react';
+import '../styles/Face.scss';
+import Header from 'components/Header';
+import '../styles/Menu.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Face() {
   const [isActive, setIsActive] = useState(false);
@@ -20,8 +23,12 @@ function Face() {
     setIsCompleted(false);
   };
 
+  useEffect(() => {
+    AOS.init();
+  },[]);
+
   return (
-    <div className='face_main'>
+    <div className='face_main' data-aos="zoom-in"data-aos-easing="ease-in-out"data-aos-delay="50" >
     <Header />
     <div className='face_section'>
     <div

@@ -1,9 +1,17 @@
 import Background from 'components/Background'
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/Kakao.scss';
 import Header from 'components/Header';
+import '../styles/Menu.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Kakao() {
+
+  useEffect(() => {
+    AOS.init();
+  },[]);
+
   return (
     <div className='kakao_main'>
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 0 0" width="0" height="0" style={{display:'none'}}>
@@ -42,11 +50,11 @@ function Kakao() {
           <div className='kakao_date'>
           <span>2023.00 ~ 2023.00.00</span>  
           </div>
-          <div className='kakao_overview'>
+          <div className='kakao_overview' data-aos="fade-right">
             <h3>Overview</h3>
             <p>React와 Firebase를 사용해 간단한 CRUD가 가능한 채팅 애플리케이션 SPA 제작</p>  
           </div>
-          <div className='kakao_description'>
+          <div className='kakao_description' data-aos="fade-left">
             <h3>Description</h3>
               <div className='kakao_des'>
                 <p className='kakao_p'>Firebase를 이용한 회원가입 및 로그인/로그아웃 기능</p>

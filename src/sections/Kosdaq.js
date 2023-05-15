@@ -1,8 +1,15 @@
 import Background from 'components/Background';
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Kosdaq.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Kosdaq() {
+
+  useEffect(() => {
+    AOS.init();
+  },[]);
+
   return (
     <div className='kosdaq_main'>
       <Background />
@@ -12,7 +19,12 @@ function Kosdaq() {
           <div className='kosdaq_mac'></div>
           <div className='kosdaq_desk'></div>
         </div>
-        <div className='kosdaq_container'>
+        <div className='kosdaq_container' 
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true">
           
           <div className='kosdaq_search'>
           <p>Search</p>  

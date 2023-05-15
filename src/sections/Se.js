@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import '../styles/Se.scss';
 import Background from 'components/Background';
 import video from '../video/se_pc.mp4';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function Se() {
@@ -11,7 +13,7 @@ function Se() {
   useEffect(() => {
     const loadText = document.querySelector(".loading-text");
     const bg = document.querySelector(".bg");
-
+    AOS.init();
     const id = setInterval(() => {
       setLoad((prevLoad) => prevLoad + 1);
     }, 30);
@@ -40,6 +42,11 @@ function Se() {
     bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
   }, [load, intervalId]);
 
+  const url ="https://hyeone22.github.io/project_se"
+  const url1 ="https://hyeone22.github.io/project_se/sub1.html"
+  const url2 ="https://hyeone22.github.io/project_se/sub2.html"
+  const url3 ="https://github.com/hyeone22/project_se"
+
   return (
     <div className='se_main'>
       <div className="bg">
@@ -54,7 +61,7 @@ function Se() {
         </div>
         <div className='se_container'>
           <div className='se_content'>
-            <div className='se_con1'>
+            <div className='se_con1'data-aos="zoom-in"data-aos-delay="100">
               <div className='se_title'>
                 <h3 className='se_h3'>Built</h3>
                 <p>2023.00.00</p>  
@@ -73,19 +80,19 @@ function Se() {
                 </svg> 
               </div>    
             </div>
-            <div className='se_con2'>
+            <div className='se_con2'data-aos="zoom-in"data-aos-delay="250">
             <div className='se_title'>
                 <h3 className='se_h3'>Work</h3> 
                 <p>삼성전기의 웹 사이트를 웹 접근성 지침과 
                     웹 표준성을 준수하여 제작</p>
                 <p>리뉴얼된 삼성전기 홈페이지의 인터렉션과
                     디자인 적용</p>
-                <span>Github</span>     
+                <span onClick={()=>{window.open(url3)}}>Github</span>     
               </div>
               <div className='se_skill'>
-                <span>Main</span>
-                <span>Sub</span>
-                <span>Sub1</span>     
+                <span onClick={()=>{window.open(url)}}>Main</span>
+                <span onClick={()=>{window.open(url1)}}>Sub</span>
+                <span onClick={()=>{window.open(url2)}}>Sub1</span>     
             </div>
             <div className='se_emoji'>
                 <svg width="106" height="17" viewBox="0 0 106 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,7 +103,7 @@ function Se() {
                 </svg> 
               </div>   
             </div>
-            <div className='se_con3'>
+            <div className='se_con3'data-aos="zoom-in"data-aos-delay="290">
               <div className='se_title'>
                  <h3 className='se_h3'>Project Info</h3>
                 <p>2023.00.00</p>
@@ -114,10 +121,10 @@ function Se() {
                 </svg> 
               </div>   
             </div>
-            <div className='se_con4'>
+            <div className='se_con4'data-aos="zoom-in"data-aos-delay="180">
 
             </div>
-            <div className='se_con5'>
+            <div className='se_con5'data-aos="zoom-in"data-aos-delay="180">
             </div>
           </div>
          
