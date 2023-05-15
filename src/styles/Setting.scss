@@ -96,6 +96,15 @@
   }
   .setting_content{
     color: #D1C7C7;
+    padding: 2rem;
+    border: 1px solid blue;
+    h3{
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    p{
+      padding: 0.8rem;
+    }
   }
 
 }
