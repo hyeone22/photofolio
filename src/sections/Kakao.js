@@ -50,11 +50,11 @@ function Kakao() {
           <div className='kakao_date'>
           <span>2023.00 ~ 2023.00.00</span>  
           </div>
-          <div className='kakao_overview' data-aos="fade-right">
+          <div className='kakao_overview'>
             <h3>Overview</h3>
             <p>React와 Firebase를 사용해 간단한 CRUD가 가능한 채팅 애플리케이션 SPA 제작</p>  
           </div>
-          <div className='kakao_description' data-aos="fade-left">
+          <div className='kakao_description'>
             <h3>Description</h3>
               <div className='kakao_des'>
                 <p className='kakao_p'>Firebase를 이용한 회원가입 및 로그인/로그아웃 기능</p>

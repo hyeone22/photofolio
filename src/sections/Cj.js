@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../styles/Cj.scss';
 import Background from 'components/Background';
 import anime from 'animejs';
+import video from '../video/cj-pc.mp4';
+import videos from '../video/cj_mobile.mp4';
 
 function Cj() {
   const h2Ref = useRef(null);
@@ -58,6 +60,12 @@ function Cj() {
         </div>
         <div className='cj_movie'>
           <div className='movie_section'>
+          <video className='cj_pc' src={video} 
+              muted autoPlay loop>  
+              </video>
+              <video className='cj_pc1' src={videos}
+              muted autoPlay loop>  
+              </video>
           </div>
         </div>
         <blockquote>
@@ -66,7 +74,7 @@ function Cj() {
           <span>100%</span>
         </div>
         </blockquote>
-        <p>CJ ONE 웹 사이트의 PC, Tablet, Mobile등 디바이스의 해상도에 맞는 반응형 웹 사이트 제작</p>
+        <p className='cj_p'>CJ ONE 웹 사이트의 PC, Tablet, Mobile등 디바이스의 해상도에 맞는 반응형 웹 사이트 제작</p>
         <ul class="faq" style={sectionStyle}>
         <li className={active ? 'active' : ''}>
       <h3 class="question" onClick={handleClick}>CJ ONE 페이지의 한줄평이 뭐야?
@@ -84,7 +92,7 @@ function Cj() {
         웹 접근성 준수 HTML/CSS/W3C/SEO 유효성 검사 Pass!    
       </div>
     </li>
-  </ul>
+         </ul>
       </div>
     </div>
   )

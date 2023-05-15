@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import '../styles/Kosdaq.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import video from '../video/kosdaq_pc.mp4';
 
 function Kosdaq() {
 
@@ -15,10 +16,14 @@ function Kosdaq() {
       <Background />
       <div className='kosdaq_section'>
         <div className='kosdaq_movie'>
-          <div className='kosdaq_phone'></div>
-          <div className='kosdaq_mac'></div>
-          <div className='kosdaq_desk'></div>
-        </div>
+          <div className='kodsaq_movie_section'>
+            <div className='kosdaq_phone'></div>
+            <div className='kosdaq_mac'></div>
+            <div className='kosdaq_desk'>
+              <video className='kosdaq_pc' src={video} muted autoPlay loop width={500} />
+            </div>
+          </div>
+      </div>
         <div className='kosdaq_container' 
           data-aos="fade-right"
           data-aos-delay="100"

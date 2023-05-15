@@ -1,9 +1,10 @@
 .kakao_main{
+  width: 95%;
   height: 100vh;
   border: 1px solid red;
   box-sizing: border-box;
-  background: #000;
   position: relative;
+  margin: 0 auto;
   .kakao_section{
     display: flex;
     flex-direction: row;
@@ -22,6 +23,7 @@
       height: 85vh;
       border: 1px solid red;
       background: url(../images/iphone.png)no-repeat 50% 50% / contain;
+
     }
     .kakao_container{
       display: flex;

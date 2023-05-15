@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 .se_main{
+  width: 95%;
   height: 100vh;
   border: 1px solid red;
   box-sizing: border-box;
-  background: #000;
+  margin: 0 auto;
   position: relative;
 
   .bg {
@@ -81,8 +82,8 @@
           filter: grayscale(100%);
           box-shadow: 10px 10px 10px black;
           position: absolute;
-          left: 5%;
-          top: 10%;
+          left: 3%;
+          top: 5%;
           width: 16vw;
           height: 21vh;
           background-color: #141414;
@@ -150,7 +151,7 @@
           box-shadow: 10px 10px 10px black;
           position: absolute;
           top: 5%;
-          left: 62%;
+          left: 60%;
           width: 16.5vw;
           height: 32vh;
           border: 1px solid red;
@@ -225,8 +226,8 @@
           filter: grayscale(100%);
           box-shadow: 10px 10px 10px black;
           position: relative;
-          top: 43%;
-          left: 25%;
+          top: 37%;
+          left: 20%;
           border: 1px solid red;
           width: 16vw;
           height: 25vh;
@@ -309,7 +310,7 @@
           filter: grayscale(100%);
           box-shadow: 10px 10px 10px black;
           position: absolute;
-          left: 63%;
+          left: 61%;
           bottom: 7%;
           width: 15vw;
           height: 27vh;
@@ -330,11 +331,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 39vw;
+      width: 40vw;
       height: 71vh;
       border: 1px solid red;
-      background: url(../images/Front2.png)no-repeat 0 50% / contain;
       margin: 0 auto;
+
       // text-align: center; 
       // position: relative; 
       // padding-bottom: 56.25%; 
@@ -342,15 +343,22 @@
       // height: 0; 
       // overflow: hidden; 
       // margin: 10px 10px 30px 10px;
-      video{
-        position: absolute;
-        top: -10%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
+      .se_mokup{
+        width: 90%;
+        height: 90%;
+        border: 1px solid blue;
+        background: url(../images/Front2.png)no-repeat 0 50%/ contain;
+        position: relative;
 
+        video{
+          width:100%;
+
+          position: absolute;
+          top: 10%;
+          
+        }
       }
+
     }
   }
 }
@@ -396,8 +404,32 @@
 
     }
     .se_movie{
-      width: 100% !important;
-      height: 100% !important;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 85vw !important;
+      height: 71vh;
+      border: 1px solid red;
+      margin: 0 auto;
+
+
+      // text-align: center; 
+      // position: relative; 
+      // padding-bottom: 56.25%; 
+      // padding-top: 300px; 
+      // height: 0; 
+      // overflow: hidden; 
+      // margin: 10px 10px 30px 10px;
+      .se_mokup{
+        width: 400px !important;
+        
+        video{
+          width: 397px !important;
+          top: 5% !important;
+        }
+      }
+
     }
   }
 }
@@ -419,6 +451,34 @@
               bottom: 10% !important;
             }
           }
+        }
+        .se_movie{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 42vw;
+          height: 71vh;
+          border: 1px solid red;
+          margin: 0 auto;
+    
+          // text-align: center; 
+          // position: relative; 
+          // padding-bottom: 56.25%; 
+          // padding-top: 300px; 
+          // height: 0; 
+          // overflow: hidden; 
+          // margin: 10px 10px 30px 10px;
+          .se_mokup{
+            width: 451px;
+            
+            
+            video{
+              width: 447px;
+              top: 23%;
+            }
+          }
+    
         }
       }
     }
@@ -453,6 +513,34 @@
               bottom: 3% !important;
             }
           }
+        }
+        .se_movie{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40vw;
+          height: 71vh;
+          border: 1px solid red;
+          margin: 0 auto;
+    
+          // text-align: center; 
+          // position: relative; 
+          // padding-bottom: 56.25%; 
+          // padding-top: 300px; 
+          // height: 0; 
+          // overflow: hidden; 
+          // margin: 10px 10px 30px 10px;
+          .se_mokup{
+            width: 560px;
+            
+            
+            video{
+              width: 558px;
+              top: 17%;
+            }
+          }
+    
         }
       }
     }

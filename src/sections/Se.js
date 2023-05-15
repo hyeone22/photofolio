@@ -128,12 +128,12 @@ function Se() {
             </div>
           </div>
          
-          <div className='se_movie'> 
-           
-          <video className='se_pc' src={video}
-           muted autoPlay loop 
-           allowfullscreen>  
-          </video>
+          <div className='se_movie'>
+            <div className='se_mokup'>
+                <video className='se_pc' src={video}
+              muted autoPlay loop>  
+              </video>
+            </div> 
         </div>
         </div>
 

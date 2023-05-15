@@ -1,8 +1,9 @@
 .cj_main {
+  width: 95%;
   height: 100vh;
   border: 1px solid red;
   box-sizing: border-box;
-  background: #000;
+  margin: 0 auto;
   position: relative;
   .cj_section {
     border: 1px solid blue;
@@ -39,6 +40,31 @@
       background-color: rgba(28, 28, 30, 1);
       width: 70vw;
       height: 43vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      .movie_section{
+        border: 1px solid red;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: relative;
+        background: url(../images/Front2.png)no-repeat 50% 50% / contain;
+        .cj_pc{
+          margin-top: 1rem;
+          width: 100%;
+          height: 68%;
+          border-radius: 20px 20px 0 0;
+        }
+        .cj_pc1{
+          position: absolute;
+          left: 25%;
+          top: 20%;
+  
+          height: 300px;
+        }
+      }
+
       
     }
     .cj_title{
@@ -183,6 +209,7 @@
       }  
       .cj_movie{
         width: 100%;
+
       }
       .cj_title{
         h2{
@@ -196,11 +223,12 @@
       p{
         top: 67%;
         font-size: 0.9rem;
-        left: 20%;
+        left:15%;
         
       }
       blockquote{
         padding-bottom: 4rem;
+
       }
       blockquote:after{
         bottom: 1rem;
@@ -212,8 +240,33 @@
       }
       .faq{
         padding-left: 7rem;
+
+        li{
+          .question{
+            font-size: 2rem;
+          }
+        }
       }
     }
   }
 }
 
+@media (min-width: 769px) and (max-width:1399px) {
+  .cj_main{
+    .cj_section{
+      .cj_p{
+        top: 68%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) and (max-width:1597px) {
+  .cj_main{
+    .cj_section{
+      .cj_p{
+        top: 72.5%;
+      }
+    }
+  }
+}
