@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/photofolio/static/css/main.ac99d1c6.css",
-    "main.js": "/photofolio/static/js/main.b6a4eba0.js",
+    "main.css": "/photofolio/static/css/main.6956bd49.css",
+    "main.js": "/photofolio/static/js/main.ed218e2f.js",
     "static/media/cj-pc.mp4": "/photofolio/static/media/cj-pc.697f0c225f7a6cb2c7c7.mp4",
-    "static/media/cj_mobile.mp4": "/photofolio/static/media/cj_mobile.030208eccf2cbea8d05e.mp4",
-    "static/media/se_pc.mp4": "/photofolio/static/media/se_pc.9cebc82dad6a5e50cf55.mp4",
+    "static/media/se_pc.mp4": "/photofolio/static/media/se_pc.263b1858d608f15c7857.mp4",
+    "static/media/kakao_app.mp4": "/photofolio/static/media/kakao_app.3287e778b548955b7f62.mp4",
+    "static/media/cj_tablet.mp4": "/photofolio/static/media/cj_tablet.5574b88db0e633515307.mp4",
     "static/media/Background.png": "/photofolio/static/media/Background.6d85c812f8fb2f47d86b.png",
+    "static/media/cj_mobile.mp4": "/photofolio/static/media/cj_mobile.91f75198497cf1d3bc5c.mp4",
     "static/media/kosdaq_pc.mp4": "/photofolio/static/media/kosdaq_pc.584ade9d2143c4de2bde.mp4",
+    "static/media/kosdaq_mobile.mp4": "/photofolio/static/media/kosdaq_mobile.c66c3cdf0048633096c3.mp4",
+    "static/media/kosdaq_tablet.mp4": "/photofolio/static/media/kosdaq_tablet.48ae809ff83b30e2b713.mp4",
     "static/media/netflix.png": "/photofolio/static/media/netflix.b1712d5cede9c55d829e.png",
     "static/media/frame1.png": "/photofolio/static/media/frame1.e5768816dded79f917c6.png",
     "static/media/cj_screen.png": "/photofolio/static/media/cj_screen.c3d1b8547fdc51af9c15.png",
@@ -16,11 +20,11 @@
     "static/media/Front2.png": "/photofolio/static/media/Front2.ab6e188f3d0d73e6a99c.png",
     "static/media/kakao.jpg": "/photofolio/static/media/kakao.9785ba2591a3bedee686.jpg",
     "index.html": "/photofolio/index.html",
-    "main.ac99d1c6.css.map": "/photofolio/static/css/main.ac99d1c6.css.map",
-    "main.b6a4eba0.js.map": "/photofolio/static/js/main.b6a4eba0.js.map"
+    "main.6956bd49.css.map": "/photofolio/static/css/main.6956bd49.css.map",
+    "main.ed218e2f.js.map": "/photofolio/static/js/main.ed218e2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac99d1c6.css",
-    "static/js/main.b6a4eba0.js"
+    "static/css/main.6956bd49.css",
+    "static/js/main.ed218e2f.js"
   ]
 }
