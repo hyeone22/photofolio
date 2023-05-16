@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/Cj.scss';
 import Background from 'components/Background';
-import anime from 'animejs';
 import video from '../video/cj-pc.mp4';
 import videos from '../video/cj_mobile.mp4';
+import videoss from '../video/cj_tablet.mp4';
 
 function Cj() {
   const h2Ref = useRef(null);
@@ -63,9 +63,16 @@ function Cj() {
           <video className='cj_pc' src={video} 
               muted autoPlay loop>  
               </video>
+              <div className='cj_pc_mok'>
               <video className='cj_pc1' src={videos}
               muted autoPlay loop>  
               </video>
+              </div>
+              <div className='cj_tablet_mok'>
+                <video className='cj_tablet' src={videoss}
+                  muted autoPlay loop>
+                  </video>
+              </div>
           </div>
         </div>
         <blockquote>

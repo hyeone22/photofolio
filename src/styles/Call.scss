@@ -369,12 +369,12 @@
               border: 3px solid green;
               position: absolute;
               max-width: 418px;
+              width: 350px;
               height: 100%;
               margin-inline:32px;
               opacity: 0;
               will-change: transform, opacity;
               animation: carousel-animate 27s cubic-bezier(0.37, 0, 0.63, 1) infinite;
-              
               .skill{
                 border: 1px solid #ABB2BF;
                 display: flex;
@@ -387,7 +387,7 @@
                 font-weight: 400;
                 p{
                   margin-right: 3px;
-                  font-size: 1rem;
+                  font-size: 2rem;
                 }
               }
               .box1{
@@ -398,7 +398,7 @@
                 h3{
                   color: #fff;
                   font-weight: 500;
-                  font-size: 1.5rem;
+                  font-size: 3rem;
                   padding: 0.8rem;
                   text-align: center;
                   margin-top: 2rem;
@@ -440,7 +440,7 @@
                 border-radius: 15px;
                 .picture{
                   background: url(../images/main_video_thum2.jpg)no-repeat 0 0 / cover;
-                  width: 21vw;
+                  width: 100%;
                   height: 32vh;
                   border-radius: 15px 15px 0 0;
                 }
@@ -462,7 +462,7 @@
                   border-radius: 15px;
                   .picture{
                     background: url(../images/kakao.jpg)no-repeat 0 0 / cover;
-                    width: 21vw;
+                    width: 100%;
                     height: 32vh;
                     border-radius: 15px 15px 0 0;
                   }
@@ -482,7 +482,7 @@
                   border-radius: 15px;
                   .picture{
                     background: url(../images/cj_screen.png)no-repeat 0 0 / cover;
-                    width: 21vw;
+                    width: 100%;
                     height: 32vh;
                     border-radius: 15px 15px 0 0;
                   }
@@ -502,7 +502,7 @@
                   border-radius: 15px;
                   .picture{
                     background: url(../images/netflix.png)no-repeat 50% 0 / cover;
-                    width: 21vw;
+                    width: 100%;
                     height: 32vh;
                     border-radius: 15px 15px 0 0;
                   }
@@ -522,7 +522,7 @@
                   border-radius: 15px;
                   .picture{
                     background: url(../images/img_mvisual01.png)no-repeat 0 0 / cover;
-                    width: 21vw;
+                    width: 100%;
                     height: 32vh;
                     border-radius: 15px 15px 0 0;
                   }
@@ -541,7 +541,7 @@
                   border-radius: 15px;
                   .picture{
                     background: url(../images/img_mvisual01.png)no-repeat 0 0 / cover;
-                    width: 21vw;
+                    width: 100%;
                     height: 32vh;
                     border-radius: 15px 15px 0 0;
                   }
@@ -561,7 +561,7 @@
                   border-radius: 15px;
                   .picture{
                     background: url(../images/img_mvisual01.png)no-repeat 0 0 / cover;
-                    width: 21vw;
+                    width: 100%;
                     height: 32vh;
                     border-radius: 15px 15px 0 0;
                   }

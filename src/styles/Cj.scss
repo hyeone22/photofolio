@@ -56,13 +56,33 @@
           height: 68%;
           border-radius: 20px 20px 0 0;
         }
-        .cj_pc1{
-          position: absolute;
-          left: 25%;
-          top: 20%;
-  
-          height: 300px;
+        .cj_pc_mok{
+            border: 10px solid black;
+            border-radius: 20px;
+            height: 300px;
+            width: 144px;
+            position: absolute;
+            left: 25%;
+            top: 20%;
+
+          .cj_pc1{
+            height: 300px;
+ 
+          }
         }
+        .cj_tablet_mok{
+          border: 10px solid black;
+          border-radius: 20px;
+          width: 300px;
+          position: absolute;
+          right: 13%;
+          top: 15%;
+
+          .cj_tablet{
+            width: 300px;
+          }
+        }
+
       }
 
       

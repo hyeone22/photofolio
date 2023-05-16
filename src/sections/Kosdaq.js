@@ -4,6 +4,10 @@ import '../styles/Kosdaq.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import video from '../video/kosdaq_pc.mp4';
+import videos from '../video/kosdaq_tablet.mp4';
+import videoss from '../video/kosdaq_mobile.mp4';
+
+
 
 function Kosdaq() {
 
@@ -17,8 +21,12 @@ function Kosdaq() {
       <div className='kosdaq_section'>
         <div className='kosdaq_movie'>
           <div className='kodsaq_movie_section'>
-            <div className='kosdaq_phone'></div>
-            <div className='kosdaq_mac'></div>
+          <div className='kosdaq_phone'>
+            <video className='kosdaq_mobile' src={videoss} muted autoPlay loop width={300} />
+          </div>
+            <div className='kosdaq_mac'>
+              <video className='kosdaq_tablet' src={videos} muted autoPlay loop width={500} />
+            </div>
             <div className='kosdaq_desk'>
               <video className='kosdaq_pc' src={video} muted autoPlay loop width={500} />
             </div>

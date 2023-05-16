@@ -1,10 +1,10 @@
 import Background from 'components/Background'
 import React, { useEffect } from 'react'
 import '../styles/Kakao.scss';
-import Header from 'components/Header';
 import '../styles/Menu.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import video from '../video/kakao_app.mp4';
 
 function Kakao() {
 
@@ -24,11 +24,12 @@ function Kakao() {
     </svg>
       <Background />
       <div className='kakao_section'>
-        <div className='kakao_movie'>  
+        <div className='kakao_movie'>
+          <video className='kakao_app' src={video} muted autoPlay loop />
         </div>
         <div className='kakao_container'>
           <div className='kakao_header'>
-          <div class="goo">
+          <div class="goo filter">
               <h1>KAKAKOTALK APP</h1>
               <div class="drop"></div>
               <div class="drop"></div>

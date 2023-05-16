@@ -18,11 +18,17 @@
     border-radius: 30px;
     background-color: #333;
     .kakao_movie{
-      margin-top: 1rem;
-      width: 23%;
-      height: 85vh;
-      border: 1px solid red;
-      background: url(../images/iphone.png)no-repeat 50% 50% / contain;
+      position: relative;
+      top: 10%;
+      left: 1%;
+      width: 320px;
+      height: 65vh;
+      border: 10px solid #000;
+      border-radius: 20px;
+
+      .kakao_app{
+        width: 300px;
+      }
 
     }
     .kakao_container{
@@ -45,7 +51,7 @@
           filter: url(#goo);
           h1 {
             font-weight: bold;
-            font-size: 7rem;
+            font-size: 6rem;
             color: rgba(250, 206, 0, 1);
             text-shadow: 1px 1px 0 #002d54;
           }  
@@ -222,6 +228,9 @@
  } 
  .kakao_container{
   width: 60% !important;
+  z-index: 1 !important;
+  opacity: 0.7 !important;
+  
   .kakao_skill{
     span{
       margin-bottom: 1rem !important;
@@ -270,6 +279,103 @@
  }
 }
 
+@media (min-width: 769px) and (max-width:1199px) {
+  .kakao_main{
+    .kakao_section{
+      .kakao_movie{
+
+      }
+      .kakao_container{
+        .kakao_header{
+          .goo {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            filter: url(#filter);
+            
+            h1 {
+              font-weight: bold;
+              font-size: 3rem;
+              color: rgba(250, 206, 0, 1);
+              text-shadow: 10px 1px 0 #002d54;
+
+            }  
+            .drop {
+              opacity: 0;
+              width: 30px;
+              height: 40px;
+              background: rgba(250, 206, 0, 1);
+              border-radius: 1000px;
+              position: absolute;
+              animation: drip 7s infinite;
+              border: 2px solid #002d54;
+              border-top: none;
+              top: 0;
+              left: 200px;
+            }
+            .drop:nth-child(2) {
+              left: 300px;
+              animation-delay: 3s;
+            }
+            .drop:nth-child(3) {
+              left: 500px;
+              animation-delay: 2s;
+              display: none;
+            }
+            .drop:nth-child(4) {
+              left: 400px;
+              animation-delay: 4s;
+              display: none;
+            }
+            .drop:nth-child(5) {
+              left: 600px;
+              animation-delay: 1.5s;
+              display: none;
+            }
+            .drop:nth-child(6) {
+              left: 150px;
+              animation-delay: 5s;
+            }
+            
+            @keyframes drip {
+              0% {
+                opacity: 0;
+                transform: translateY(0);
+              }
+              35% {
+                opacity: 1;
+                transform: translateY(30px);
+              }
+              50% {
+                transform: translateY(100vh);
+              }
+              100% {
+                transform: translateY(100vh);
+              }
+            }
+          }
+
+        }
+        .kakao_skill{
+          span{
+          margin-bottom: 0.7rem; 
+          }
+        }
+        .kakao_date{
+
+        }
+        .kakao_overview{
+          p{
+
+          }
+        }
+        .kakao_description{
+          bottom: 10%;
+        }
+      }
+    }
+  }  
+}
 
 @media (min-width:1200px) and (max-width:1399px) {
   .kakao_main{
@@ -279,11 +385,83 @@
       }
       .kakao_container{
         .kakao_header{
-          .goo{
-            h1{
-              font-size: 7rem;
+          .goo {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            filter: url(#filter);
+            
+            h1 {
+              font-weight: bold;
+              font-size: 6rem;
+              color: rgba(250, 206, 0, 1);
+              text-shadow: 10px 1px 0 #002d54;
+
+            }  
+            .drop {
+              opacity: 0;
+              width: 30px;
+              height: 40px;
+              background: rgba(250, 206, 0, 1);
+              border-radius: 1000px;
+              position: absolute;
+              animation: drip 7s infinite;
+              border: 2px solid #002d54;
+              border-top: none;
+              top: 0;
+              left: 200px;
+            }
+            .drop:nth-child(2) {
+              left: 300px;
+              animation-delay: 3s;
+            }
+            .drop:nth-child(3) {
+              left: 500px;
+              animation-delay: 2s;
+            }
+            .drop:nth-child(4) {
+              left: 400px;
+              animation-delay: 4s;
+            }
+            .drop:nth-child(5) {
+              left: 600px;
+              animation-delay: 1.5s;
+            }
+            .drop:nth-child(6) {
+              left: 150px;
+              animation-delay: 5s;
+            }
+            
+            @keyframes drip {
+              0% {
+                opacity: 0;
+                transform: translateY(0);
+              }
+              35% {
+                opacity: 1;
+                transform: translateY(30px);
+              }
+              50% {
+                transform: translateY(100vh);
+              }
+              100% {
+                transform: translateY(100vh);
+              }
             }
           }
+        }
+        .kakao_skill{
+
+        }
+        .kakao_date{
+
+        }
+        .kakao_overview{
+          p{
+          }
+        }
+        .kakao_description{
+
         }
       }
     }
@@ -299,9 +477,68 @@
       }
       .kakao_container{
         .kakao_header{
-          .goo{
-            h1{
+          .goo {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            filter: url(#filter);
+            
+            h1 {
+              font-weight: bold;
               font-size: 5rem;
+              color: rgba(250, 206, 0, 1);
+              text-shadow: 10px 1px 0 #002d54;
+
+            }  
+            .drop {
+              opacity: 0;
+              width: 30px;
+              height: 40px;
+              background: rgba(250, 206, 0, 1);
+              border-radius: 1000px;
+              position: absolute;
+              animation: drip 7s infinite;
+              border: 2px solid #002d54;
+              border-top: none;
+              top: 0;
+              left: 200px;
+            }
+            .drop:nth-child(2) {
+              left: 300px;
+              animation-delay: 3s;
+            }
+            .drop:nth-child(3) {
+              left: 500px;
+              animation-delay: 2s;
+            }
+            .drop:nth-child(4) {
+              left: 700px;
+              animation-delay: 4s;
+            }
+            .drop:nth-child(5) {
+              left: 600px;
+              animation-delay: 1.5s;
+            }
+            .drop:nth-child(6) {
+              left: 150px;
+              animation-delay: 5s;
+            }
+            
+            @keyframes drip {
+              0% {
+                opacity: 0;
+                transform: translateY(0);
+              }
+              35% {
+                opacity: 1;
+                transform: translateY(30px);
+              }
+              50% {
+                transform: translateY(100vh);
+              }
+              100% {
+                transform: translateY(100vh);
+              }
             }
           }
         }
