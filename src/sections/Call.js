@@ -12,9 +12,11 @@ function Call() {
     AOS.init();
   },[]);
 
+  const url ="https://hyeone22.github.io/project_se"
 
   return (
-    <div className='call_main'>
+    <div className='call_main' id='ofSection'>
+      
     <div class="container">
     <Background />
     <h2  data-aos="fade-right">Home</h2>
@@ -28,11 +30,11 @@ function Call() {
           <p>CSS</p>
           <p>JS</p>
         </div>
-        <div className='box1 '>
+        <div className='box1'>
           <h3>삼성전기</h3>
           <p>삼성전기 기업 웹사이트 제작</p>
           <div className='box2'>
-          <span>Go</span>
+          <span onClick={()=>{window.open(url)}}>Go</span>
           <span>Cached</span>  
           </div> 
         </div>  

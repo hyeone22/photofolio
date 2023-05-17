@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function Settings() {
   return (
-    <div className='setting_main'>
+    <div className='setting_main' id='offfSection'>
     <Header />
       <div className='setting_header'>
       <svg width="200" height="200" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,18 +51,37 @@ function Settings() {
         </div>
       </div>
       <div className='setting_content'>
-        <h3>안녕하세요 저는 예비 프론트엔드 개발자 김승현 입니다!</h3>
-        <p>
-          저는 이젠 아카데미 UI/UX 웹&앱 디자인&프론트엔드 수업을 수료한 예비 프론트엔드 개발자입니다. 
-          저는 반응형 웹사이트를 개발하고 이를 현대적이고 사용자 친화적으로 - - -
-        </p>
-        <p>
-          저의 창의성과 지식을 웹사이트로  - - -
-          저는 최신 기술과 프레임워크에 대해 배우기 위해 노력하겠습니다.
-        </p>
-        <p>
-          보다 자세한 정보는 다음 링크를 참조하십시오.  
-        </p>
+        <div className='setting_contents'>
+        <h3>Upgrade</h3>
+        <svg class="spinner" width="65" height="65" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+           <circle class="path1" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+        </svg>
+        </div>
+        <div className='setting_index'>
+          <div className='setting_idx'>
+            <h4>Infomation</h4>
+            <p>김승현(27)</p>
+            <p>강남대학교 학사 졸업</p>
+            <p>010-5635-0561</p>
+            <p>wmfrjdnsakdma12@naver.com</p>  
+          </div>
+          <div className='setting_idx'>
+            <h4>Education</h4> 
+            <p>강남 이젠아카데미 UI/UX 웹&앱디자인&프론트엔드 수료</p>
+
+          </div>
+          <div className='setting_idx'>
+            <h4>Index</h4>
+            <p>Home</p>
+            <p>삼성전기</p>
+            <p>CJ ONE</p>
+            <p>코스닥 글로벌</p>
+            <p>카카오톡</p>
+            <p>넷플릭스</p>
+            <p>Pure CSS</p>  
+          </div>
+        </div>
+       
        
       </div>  
     </div>

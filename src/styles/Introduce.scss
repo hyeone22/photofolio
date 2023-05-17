@@ -12,26 +12,20 @@
   flex-direction: column;
 .introduce_face{
   margin: 0 auto;
-  .chat{
-    position: absolute;
-    left: 5%;
-    top: 0;
-    width: 30%;
-    height: 10%;
-    
-  }
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid blue;
+  justify-content: center;
   .face{
-    width: 100%;
-    height: 100%;
-  }
-  svg{
     border: 1px solid red;
   }
 }
 .introduce_text{
   background-color: #1C1C1E;
   border-radius: 0 0 10px 10px;
-  height: 50vh;
+  height: 35.5vh;
   width: 100%;
   margin: 0 auto;
   .introduce_header{
@@ -131,6 +125,7 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    display: none;
     h2{
       font-size: 3rem;
       color: #fff;

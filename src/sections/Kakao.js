@@ -12,6 +12,9 @@ function Kakao() {
     AOS.init();
   },[]);
 
+  const url = 'https://github.com/hyeone22/kakaotalk_2023';
+  const url1 = 'https://hyeone22.github.io/kakaotalk_2023';
+
   return (
     <div className='kakao_main'>
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 0 0" width="0" height="0" style={{display:'none'}}>
@@ -71,8 +74,8 @@ function Kakao() {
               </div>
             </div>
             <div className='kakao_nav type3'>
-              <span>Repository</span>
-              <span>Page</span>
+              <span onClick={()=>{window.open(url)}}>Repository</span>
+              <span onClick={()=>{window.open(url1)}}>Page</span>
             </div>
 
         </div>

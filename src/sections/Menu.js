@@ -10,6 +10,17 @@ function Menu() {
   const [currentTime, setCurrentTime] = useState(new Date());
   const currentDate = new Date().toLocaleString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
+
+
+
   useEffect(() => {
     AOS.init();
     const timer = setInterval(() => {
@@ -19,7 +30,10 @@ function Menu() {
   }, []);
 
   const formattedHour = currentTime.getHours().toString().padStart(2, "0");
-  const formattedMin = currentTime.getMinutes().toString().padStart(2, "0");  
+  const formattedMin = currentTime.getMinutes().toString().padStart(2, "0"); 
+
+  
+
   return (
     <div className='menu_main'>
     <Header />
@@ -96,7 +110,7 @@ function Menu() {
             </defs>
           </svg>
 
-          <div className='menu_text'>
+          <div className='menu_text' onClick={() => scrollToSection('offfSection')}>
             <p>Setting</p>
             <p>설정으로 돌아가기</p>  
           </div>
@@ -107,7 +121,7 @@ function Menu() {
           <div className='menu_img'>
 
           </div>
-          <div className='menu_text'>
+          <div className='menu_text' onClick={() => scrollToSection('ofSection')}>
               <p>Projects</p>
               <p>Projects로 바로가기</p>
           </div>
@@ -120,7 +134,7 @@ function Menu() {
           <path d="M33.3037 33.9604C34.3091 33.9604 34.9746 33.2383 34.9746 32.1904V19.9136C34.9746 18.8516 34.3091 18.1294 33.3037 18.1294C32.2983 18.1294 31.6328 18.8516 31.6328 19.9136V32.1904C31.6328 33.2383 32.2983 33.9604 33.3037 33.9604ZM33.3037 48.5454C41.4033 48.5454 48.0728 41.876 48.0728 33.7764C48.0728 29.5425 46.2319 25.8042 43.6265 23.312C42.0122 21.6978 39.6616 23.7793 41.3325 25.5352C43.4849 27.6167 44.8159 30.5337 44.8301 33.7764C44.8442 40.1626 39.6899 45.3027 33.3037 45.3027C26.9175 45.3027 21.7915 40.1626 21.7915 33.7764C21.8057 30.5054 23.1226 27.6025 25.2749 25.521C26.96 23.7651 24.5952 21.6836 22.981 23.2979C20.3755 25.8042 18.5347 29.5425 18.5347 33.7764C18.5347 41.876 25.2041 48.5454 33.3037 48.5454Z" fill="#FF3B30"/>
         </svg>
 
-          <div className='menu_text'>
+          <div className='menu_text' onClick={() => scrollToSection('offSection')}>
             <p>시스템 종료</p>
             <p>종료하시겠습니까?</p>
           </div>

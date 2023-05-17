@@ -6,6 +6,9 @@ import { FaGithub,FaPlay } from "react-icons/fa";
 
 
 function Netflix() {
+
+  const url = 'https://github.com/hyeone22/netflix_app_2023';
+  const url1 = 'https://hyeone22.github.io/netflix_app_2023';
   return (
     <div className='netflix_main'>
       <Header />
@@ -33,8 +36,8 @@ function Netflix() {
             <p>Swiper 라이브러리로 영화배열의 스와이프 기능 구현</p>
           </div>
           <div className='netflix_nav'>
-            <span><i><FaPlay /></i>Play App</span>
-            <span><i><FaGithub /></i>More Github</span>
+            <span onClick={()=>{window.open(url1)}}><i><FaPlay /></i>Play App</span>
+            <span onClick={()=>{window.open(url)}}><i><FaGithub /></i>More Github</span>
             
           </div>
         </div>

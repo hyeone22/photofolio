@@ -15,6 +15,8 @@ function Kosdaq() {
     AOS.init();
   },[]);
 
+  const url = 'https://github.com/hyeone22/project_website'
+
   return (
     <div className='kosdaq_main'>
       <Background />
@@ -116,7 +118,7 @@ function Kosdaq() {
               </div>
               <div className='kosdaq_footer'>
               <p>28 April 2023</p>
-              <span>More Page</span>
+              <span onClick={()=>{window.open(url)}}>More Page</span>
               </div>
             </div>
           </div>

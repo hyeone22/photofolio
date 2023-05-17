@@ -14,6 +14,9 @@ function Face() {
     setIsActive(true);
     timer = setTimeout(() => {
       setIsCompleted(true);
+      setTimeout(() => {
+        scrollToSection('offfSection'); 
+      }, 1000); 
     }, 1000);
   };
 
@@ -23,9 +26,16 @@ function Face() {
     setIsCompleted(false);
   };
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   useEffect(() => {
     AOS.init();
-  },[]);
+  }, []);
 
   return (
     <div className='face_main' data-aos="zoom-in"data-aos-easing="ease-in-out"data-aos-delay="50" >

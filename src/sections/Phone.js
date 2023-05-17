@@ -4,6 +4,13 @@ import { FaClock,FaComment,FaPhoneAlt,FaPhone } from "react-icons/fa";
 import Header from 'components/Header';
 
 function Phone() {
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className='phone_main'>
       <Header />
@@ -27,7 +34,7 @@ function Phone() {
           </span>
           <p>종료</p>  
         </div>
-        <div className='phone_screen'>
+        <div className='phone_screen'onClick={() => scrollToSection('introduce_scroll')}>
           <span className='phone_green'>
             <i><FaPhone /></i>
           </span>

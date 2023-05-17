@@ -17,7 +17,7 @@ function Off() {
   const formattedHour = currentTime.getHours().toString().padStart(2, "0");
   const formattedMin = currentTime.getMinutes().toString().padStart(2, "0");
   return (
-    <div className='off_main'>
+    <div className='off_main' id="offSection">
     <Header />
       <div className='off_time'>
 
