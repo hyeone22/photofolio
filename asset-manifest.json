@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/photofolio/static/css/main.33c9e3df.css",
-    "main.js": "/photofolio/static/js/main.e06b1428.js",
+    "main.css": "/photofolio/static/css/main.c26d594a.css",
+    "main.js": "/photofolio/static/js/main.6c190be8.js",
     "static/media/cj-pc.mp4": "/photofolio/static/media/cj-pc.697f0c225f7a6cb2c7c7.mp4",
     "static/media/se_pc.mp4": "/photofolio/static/media/se_pc.263b1858d608f15c7857.mp4",
     "static/media/kakao_app.mp4": "/photofolio/static/media/kakao_app.3287e778b548955b7f62.mp4",
@@ -22,11 +22,11 @@
     "static/media/Front2.png": "/photofolio/static/media/Front2.ab6e188f3d0d73e6a99c.png",
     "static/media/kakao.jpg": "/photofolio/static/media/kakao.9785ba2591a3bedee686.jpg",
     "index.html": "/photofolio/index.html",
-    "main.33c9e3df.css.map": "/photofolio/static/css/main.33c9e3df.css.map",
-    "main.e06b1428.js.map": "/photofolio/static/js/main.e06b1428.js.map"
+    "main.c26d594a.css.map": "/photofolio/static/css/main.c26d594a.css.map",
+    "main.6c190be8.js.map": "/photofolio/static/js/main.6c190be8.js.map"
   },
   "entrypoints": [
-    "static/css/main.33c9e3df.css",
-    "static/js/main.e06b1428.js"
+    "static/css/main.c26d594a.css",
+    "static/js/main.6c190be8.js"
   ]
 }
