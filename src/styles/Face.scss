@@ -10,7 +10,7 @@
   box-sizing: border-box;
   .face_section{
     height: 90vh;
-    border: 1px solid blue;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,7 @@
     align-self: center;
 
     .face-id-wrapper {
-      border: 1px solid red;
+
       width: 133px;
       height: 133px;
       position: relative;

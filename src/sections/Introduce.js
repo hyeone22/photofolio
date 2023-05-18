@@ -18,9 +18,16 @@ function Introduce() {
     data-aos-delay="300"
     data-aos-offset="0">
         <Header />
+        
       <div className='introduce_face'>
+        <div className='introduce_my'>
+         <h2>#소통과 협업의 가치</h2>
+         <h3>안녕하세요 저는 프론트엔드 개발자를 꿈꾸는 예비 개발자 김승현 입니다.</h3>  
+        <p>- 노력과 소통이 업무에서 중요한 부분을 차지함을 알기에 노력하겠습니다.</p>
+        <p>- 협업의 가치를 배워가는 개발자가 되겠습니다.</p>
+        </div>
         <img src={img} className='face_1' alt='' /> 
-        <img src={img2} className='face2' alt='' /> 
+        <img src={img2} className='face_2' alt='' style={{display:'none'}} /> 
       </div>
       <div className='introduce_text'>
         <div className='introduce_header'>
@@ -31,6 +38,7 @@ function Introduce() {
           <p>010-5635-0561</p>
           <p>wmfrjdnsakdma12@naver.com</p>  
           </div>
+          
           <span></span>   
         </div>
         <div className='introduce_content'>

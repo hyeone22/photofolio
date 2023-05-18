@@ -44,10 +44,9 @@
     display: grid;
     place-items: center;
     height: 100vh;
-    border: 1px solid green;
     h2{
       position: absolute;
-      border: 1px solid red;
+
       font-size: 5rem;
       font-weight: bold;
       color: #fff;
@@ -62,17 +61,17 @@
         padding-block-end: 24px;
         perspective: 100px;
         width: 100%;
-        border: 1px solid blue;
+
         z-index: 10;
         .carousel__wrapper {
           position: relative;
           display: flex;
           justify-content: center;
           height: 61.2vh;
-          border: 1px solid red;
+
           z-index: 10;
           .item{
-            border: 3px solid green;
+  
             position: absolute;
             max-width: 418px;
             height: 100%;

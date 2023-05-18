@@ -49,6 +49,9 @@ function Settings() {
           <span></span>
           <p>Preparing Update ...</p>  
         </div>
+        <svg class="spinner" width="65" height="65" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+           <circle class="path1" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+        </svg>
       </div>
       <div className='setting_content'>
         <div className='setting_contents'>
@@ -70,7 +73,7 @@ function Settings() {
             <p>강남 이젠아카데미 UI/UX 웹&앱디자인&프론트엔드 수료</p>
 
           </div>
-          <div className='setting_idx'>
+          {/* <div className='setting_idx'>
             <h4>Index</h4>
             <p>Home</p>
             <p>삼성전기</p>
@@ -79,7 +82,7 @@ function Settings() {
             <p>카카오톡</p>
             <p>넷플릭스</p>
             <p>Pure CSS</p>  
-          </div>
+          </div> */}
         </div>
        
        

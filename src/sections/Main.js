@@ -1,96 +1,100 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import '../styles/Main.scss';
 
 
 function Main() {
-const text1Ref = useRef(null);
-const text2Ref = useRef(null);
-const filterRef = useRef(null);
+  const text1Ref = useRef(null);
+  const text2Ref = useRef(null);
+  const filterRef = useRef(null);
 
-const texts = [
-'Hello',
-'My',
-'Name',
-'is',
-'Seung-Hyeon'
-];
+  const texts = ['Hello', 'My', 'Name', 'is', 'Seung-Hyeon'];
 
-const morphTime = 2.5;
-const cooldownTime = 0.5;
+  const morphTime = 2.5;
+  const cooldownTime = 0.5;
 
-let textIndex = texts.length - 1;
-let time = new Date();
-let morph = 0;
-let cooldown = cooldownTime;
+  let textIndex = texts.length - 1;
+  let time = new Date();
+  let morph = 0;
+  let cooldown = cooldownTime;
 
-useEffect(() => {
-const text1 = text1Ref.current;
-const text2 = text2Ref.current;
-const filter = filterRef.current;
+  const setMorph = useCallback(
+    (fraction) => {
+      const text1 = text1Ref.current;
+      const text2 = text2Ref.current;
 
-text1.textContent = texts[textIndex % texts.length];
-text2.textContent = texts[(textIndex + 1) % texts.length];
+      text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+      text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
 
-function doMorph() {
-  morph -= cooldown;
-  cooldown = 0;
+      fraction = 1 - fraction;
+      text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+      text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
 
-  let fraction = morph / morphTime;
+      text1.textContent = texts[textIndex % texts.length];
+      text2.textContent = texts[(textIndex + 1) % texts.length];
+    },
+    [textIndex, texts]
+  );
 
-  if (fraction > 1) {
-    cooldown = cooldownTime;
-    fraction = 1;
-  }
+  const doMorph = useCallback(() => {
+    morph -= cooldown;
+    cooldown = 0;
 
-  setMorph(fraction);
-}
+    let fraction = morph / morphTime;
 
-function setMorph(fraction) {
-  text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-  text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
-
-  fraction = 1 - fraction;
-  text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-  text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
-
-  text1.textContent = texts[textIndex % texts.length];
-  text2.textContent = texts[(textIndex + 1) % texts.length];
-}
-
-function doCooldown() {
-  morph = 0;
-
-  text2.style.filter = '';
-  text2.style.opacity = '100%';
-
-  text1.style.filter = '';
-  text1.style.opacity = '0%';
-}
-
-function animate() {
-  requestAnimationFrame(animate);
-
-  let newTime = new Date();
-  let shouldIncrementIndex = cooldown > 0;
-  let dt = (newTime - time) / 1000;
-  time = newTime;
-
-  cooldown -= dt;
-
-  if (cooldown <= 0) {
-    if (shouldIncrementIndex) {
-      textIndex++;
+    if (fraction > 1) {
+      cooldown = cooldownTime;
+      fraction = 1;
     }
 
-    doMorph();
-  } else {
-    doCooldown();
-  }
-}
+    setMorph(fraction);
+  }, [cooldown, morph, setMorph, morphTime]);
 
-animate();
 
-}, [texts, morphTime, cooldownTime]);
+
+  const doCooldown = useCallback(() => {
+    morph = 0;
+
+    const text1 = text1Ref.current;
+    const text2 = text2Ref.current;
+
+    text2.style.filter = '';
+    text2.style.opacity = '100%';
+
+    text1.style.filter = '';
+    text1.style.opacity = '0%';
+  }, []);
+
+  const animate = useCallback(() => {
+    requestAnimationFrame(animate);
+
+    let newTime = new Date();
+    let shouldIncrementIndex = cooldown > 0;
+    let dt = (newTime - time) / 1000;
+    time = newTime;
+
+    cooldown -= dt;
+
+    if (cooldown <= 0) {
+      if (shouldIncrementIndex) {
+        textIndex++;
+      }
+
+      doMorph();
+    } else {
+      doCooldown();
+    }
+  }, [cooldown, doCooldown, doMorph, textIndex, time]);
+
+  useEffect(() => {
+    const text1 = text1Ref.current;
+    const text2 = text2Ref.current;
+
+    text1.textContent = texts[textIndex % texts.length];
+    text2.textContent = texts[(textIndex + 1) % texts.length];
+
+    animate();
+  }, [animate, texts, textIndex]);
+
 
 return (
 <>
@@ -115,16 +119,7 @@ return (
     <div className="chevron"></div>
     <span className="text">Scroll</span>
     </div>
-    {/* <div class="ball" data-splitting>
-  <div class="ball-top"></div>
-</div>
 
-<div class="phrase" data-splitting="items">
-  <span class="word slide" data-splitting="chars">Scroll</span>
-  <span class="word slide" data-splitting="chars">Scroll</span>
-  <span class="word slide" data-splitting="chars">Scroll</span>
-  <span class="word smiley" data-splitting="chars">:)</span>
-</div> */}
 
 </div>
 

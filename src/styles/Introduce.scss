@@ -10,6 +10,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+
 .introduce_face{
   margin: 0 auto;
   position: relative;
@@ -18,8 +19,31 @@
   width: 100%;
   border: 1px solid blue;
   justify-content: center;
-  .face{
+  .introduce_my{
+    display: flex;
+    flex-direction: column;
     border: 1px solid red;
+    color: #fff;
+    padding: 2rem;
+    h2{
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 1.5;
+      color: #5D9CEC;
+      font-style: italic;
+    }
+    h3{
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding-left: 2rem;
+      line-height: 1.5;
+      color: #ABB2BF;
+    }
+    p{
+      font-size: 1rem;
+      padding-left: 3rem;
+      font-weight: 600;
+    }
   }
 }
 .introduce_text{
@@ -39,6 +63,7 @@
       height: 5vh;
       background-color: #82EFB8;
       border-radius: 5px;
+      background: url(../images/face2.png)no-repeat 0 30% / cover;
     }
     .introduce_self{
       display: flex;
@@ -53,6 +78,7 @@
         font-size: 0.8rem;
       }
     }
+   
     span{
       position: absolute;
       right: 1%;
@@ -61,7 +87,6 @@
       height: 24px;
       background-color: #767680;
       opacity: 0.8;
-      
     }
   }
   .introduce_content{
@@ -130,6 +155,7 @@
       font-size: 3rem;
       color: #fff;
       font-weight: bold;
+      
     }
     .typing-demo {
       width: 9.5ch;
@@ -168,3 +194,4 @@
     height: 50vh !important;
   }
 }
+

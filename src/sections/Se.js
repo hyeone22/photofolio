@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import '../styles/Se.scss';
 import Background from 'components/Background';
 import video from '../video/se_pc.mp4';
@@ -9,49 +9,68 @@ import 'aos/dist/aos.css';
 function Se() {
   const [load, setLoad] = useState(0);
   const [intervalId, setIntervalId] = useState(null);
+  const componentRef = useRef(null);
 
-  useEffect(() => {
-    const loadText = document.querySelector(".loading-text");
-    const bg = document.querySelector(".bg");
-    AOS.init();
-    const id = setInterval(() => {
-      setLoad((prevLoad) => prevLoad + 1);
-    }, 30);
-
-    setIntervalId(id);
-
-    return () => {
-      clearInterval(id);
-    };
+  const scale = useCallback((num, in_min, in_max, out_min, out_max) => {
+    return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
   }, []);
 
-  const scale = (num, in_min, in_max, out_min, out_max) => {
-    return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
-  };
+  const handleIntersection = useCallback((entries) => {
+    const [entry] = entries;
+    if (entry.isIntersecting) {
+      AOS.init();
+
+      const id = setInterval(() => {
+        setLoad((prevLoad) => {
+          if (prevLoad >= 99) {
+            clearInterval(id);
+            return prevLoad;
+          }
+          return prevLoad + 1;
+        });
+      }, 10);
+      setIntervalId(id);
+    } else {
+      clearInterval(intervalId);
+    }
+  }, [intervalId]);
 
   useEffect(() => {
     const loadText = document.querySelector(".loading-text");
     const bg = document.querySelector(".bg");
 
-    if (load > 99) {
-      clearInterval(intervalId);
+    const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
     }
+
+    return () => {
+      clearInterval(intervalId);
+      observer.disconnect();
+    };
+  }, [handleIntersection, intervalId]);
+
+  useEffect(() => {
+    const loadText = document.querySelector(".loading-text");
+    const bg = document.querySelector(".bg");
 
     loadText.innerText = `${load}%`;
     loadText.style.opacity = scale(load, 0, 100, 1, 0);
     bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
-  }, [load, intervalId]);
+  }, [load, scale, intervalId]);
 
-  const url ="https://hyeone22.github.io/project_se"
-  const url1 ="https://hyeone22.github.io/project_se/sub1.html"
-  const url2 ="https://hyeone22.github.io/project_se/sub2.html"
-  const url3 ="https://github.com/hyeone22/project_se"
+
+  const url = "https://hyeone22.github.io/project_se";
+  const url1 = "https://hyeone22.github.io/project_se/sub1.html";
+  const url2 = "https://hyeone22.github.io/project_se/sub2.html";
+  const url3 = "https://github.com/hyeone22/project_se";
 
   return (
-    <div className='se_main'>
+    <div className='se_main' ref={componentRef}>
       <div className="bg">
         <Background />
-      <div className="loading-text">{load}%</div>
+      <div className="loading-text" >{load}%</div>
       
       <div className='se_section'>
         <div className='se_head'>

@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState,useEffect, useCallback, useRef } from 'react';
 import '../styles/Face.scss';
 import Header from 'components/Header';
 import '../styles/Menu.scss';
@@ -8,30 +8,30 @@ import 'aos/dist/aos.css';
 function Face() {
   const [isActive, setIsActive] = useState(false);
   const [isCompleted, setIsCompleted] = useState(false);
-  let timer;
+  const timerRef = useRef(null);
 
-  const handleMouseEnter = () => {
-    setIsActive(true);
-    timer = setTimeout(() => {
-      setIsCompleted(true);
-      setTimeout(() => {
-        scrollToSection('offfSection'); 
-      }, 1000); 
-    }, 1000);
-  };
-
-  const handleMouseLeave = () => {
-    clearTimeout(timer);
-    setIsActive(false);
-    setIsCompleted(false);
-  };
-
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = useCallback((sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
-  };
+  }, []);
+
+  const handleMouseEnter = useCallback(() => {
+    setIsActive(true);
+    timerRef.current = setTimeout(() => {
+      setIsCompleted(true);
+      setTimeout(() => {
+        scrollToSection('offfSection');
+      }, 1000);
+    }, 1000);
+  }, [scrollToSection]);
+
+  const handleMouseLeave = useCallback(() => {
+    clearTimeout(timerRef.current);
+    setIsActive(false);
+    setIsCompleted(false);
+  }, []);
 
   useEffect(() => {
     AOS.init();

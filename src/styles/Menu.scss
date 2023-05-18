@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
-    border: 1px solid red;
+
     margin-top: 7rem;
     text-align: center;
     p{
@@ -28,7 +28,7 @@
     }
   }
   .menu_widget{
-    border: 1px solid blue;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -71,7 +71,7 @@
   .menu_bar{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+
     justify-content: center;
     margin: 3rem auto;
     width: 40%;
@@ -79,7 +79,7 @@
     .menu_status{
       display: flex;
       flex-direction: row;
-      border: 1px solid blue;
+
       padding: 0.7rem;
       margin: 1rem 0;
       background-color: #888;
@@ -112,7 +112,6 @@
       }
       .menu_img{
         background: url(../images/photos.png)no-repeat 0 0 / cover;
-        border: 1px solid red;
         width: 40px;
         height: 40px;
         
