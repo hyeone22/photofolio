@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/photofolio/static/css/main.c26d594a.css",
-    "main.js": "/photofolio/static/js/main.6c190be8.js",
+    "main.css": "/photofolio/static/css/main.d3f8783f.css",
+    "main.js": "/photofolio/static/js/main.8bc1b864.js",
     "static/media/cj-pc.mp4": "/photofolio/static/media/cj-pc.697f0c225f7a6cb2c7c7.mp4",
     "static/media/se_pc.mp4": "/photofolio/static/media/se_pc.263b1858d608f15c7857.mp4",
     "static/media/kakao_app.mp4": "/photofolio/static/media/kakao_app.3287e778b548955b7f62.mp4",
@@ -16,17 +16,16 @@
     "static/media/cj_screen.png": "/photofolio/static/media/cj_screen.c3d1b8547fdc51af9c15.png",
     "static/media/face2.png": "/photofolio/static/media/face2.0aafcd5a9c27fce33c37.png",
     "static/media/face.png": "/photofolio/static/media/face.720b9290ec91d37270ff.png",
-    "static/media/iphone.png": "/photofolio/static/media/iphone.22372fb0d67171679eb6.png",
     "static/media/img_mvisual01.png": "/photofolio/static/media/img_mvisual01.afd15cc44231905c5476.png",
     "static/media/main_video_thum2.jpg": "/photofolio/static/media/main_video_thum2.be827b95f6574a4c63f4.jpg",
     "static/media/Front2.png": "/photofolio/static/media/Front2.ab6e188f3d0d73e6a99c.png",
     "static/media/kakao.jpg": "/photofolio/static/media/kakao.9785ba2591a3bedee686.jpg",
     "index.html": "/photofolio/index.html",
-    "main.c26d594a.css.map": "/photofolio/static/css/main.c26d594a.css.map",
-    "main.6c190be8.js.map": "/photofolio/static/js/main.6c190be8.js.map"
+    "main.d3f8783f.css.map": "/photofolio/static/css/main.d3f8783f.css.map",
+    "main.8bc1b864.js.map": "/photofolio/static/js/main.8bc1b864.js.map"
   },
   "entrypoints": [
-    "static/css/main.c26d594a.css",
-    "static/js/main.6c190be8.js"
+    "static/css/main.d3f8783f.css",
+    "static/js/main.8bc1b864.js"
   ]
 }
