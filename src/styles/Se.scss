@@ -3,7 +3,7 @@
 .se_main{
   width: 95%;
   height: 100vh;
-  border: 1px solid red;
+
   box-sizing: border-box;
   margin: 0 auto;
   position: relative;
@@ -30,13 +30,13 @@
     width: 95%;
     left: 2%;
     top: 5%;
-    border: 1px solid blue;
+
     display: flex;
     flex-direction: column;
     .se_head{
       display: flex;
       flex-direction: column;
-      border: 1px solid green;
+
       width: 95%;
        margin: 3rem auto;
 
@@ -60,7 +60,7 @@
     }
     .se_container{
       width: 95%;
-      border: 1px solid green;
+
       height: 75vh;
       margin: 0 auto;
       display: flex;
@@ -68,7 +68,7 @@
       
       .se_content{
         position: relative;
-        border: 1px solid blue;
+
         width: 50%;
         
         .se_con1{
@@ -327,7 +327,7 @@
       align-items: center;
       width: 40vw;
       height: 71vh;
-      border: 1px solid red;
+
       margin: 0 auto;
 
       // text-align: center; 
@@ -340,7 +340,7 @@
       .se_mokup{
         width: 95%;
         height: 90%;
-        border: 1px solid blue;
+
         background: url(../images/Front2.png)no-repeat 0 50%/ contain;
         position: relative;
         overflow: hidden;
@@ -421,7 +421,7 @@
         width: 400px !important;
         
         video{
-          width: 376px !important;
+          width: 380px !important;
           top: 3% !important;
         }
       }

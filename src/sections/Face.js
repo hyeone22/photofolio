@@ -38,7 +38,7 @@ function Face() {
   }, []);
 
   return (
-    <div className='face_main' data-aos="zoom-in"data-aos-easing="ease-in-out"data-aos-delay="50" >
+    <div className='face_main event' data-aos="zoom-in"data-aos-easing="ease-in-out"data-aos-delay="50" >
     <Header />
     <div className='face_section'>
     <div

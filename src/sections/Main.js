@@ -98,7 +98,7 @@ function Main() {
 
 return (
 <>
-<div className="main">
+<div className="main event">
   <div id="container">
     <span id="text1" ref={text1Ref}></span>
     <span id="text2" ref={text2Ref}></span>

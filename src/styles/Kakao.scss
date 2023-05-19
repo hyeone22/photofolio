@@ -1,7 +1,7 @@
 .kakao_main{
   width: 95%;
   height: 100vh;
-  border: 1px solid red;
+
   box-sizing: border-box;
   position: relative;
   margin: 0 auto;
@@ -21,13 +21,13 @@
       position: relative;
       top: 10%;
       left: 1%;
-      width: 320px;
-      height: 64vh;
+      width: 400px;
+      height: 74vh;
       border: 10px solid #000;
       border-radius: 20px;
 
       .kakao_app{
-        width: 300px;
+        width: 345px;
       }
 
     }
@@ -38,11 +38,12 @@
       margin-left: 1rem;
       width: 70vw;
       height: 85vh;
-      border: 1px solid red;
+
       .kakao_header{
         display: flex;
         flex-direction: column;
         padding: 1rem;
+        justify-content: center;
  
         .goo {
           position: relative;
@@ -158,7 +159,7 @@
 
         }
         p{
-          border: 1px solid red;
+   
           padding: 2rem 1rem;
           color: #fff;
           width: 33vw;
@@ -223,66 +224,141 @@
 }
 @media (max-width: 768px) {
 
-  .kakao_section{
-    border: 1px solid blue !important;
-    width: 90% !important;
-    height: 91vh !important;
-    top: 50% !important;
-    .kakao_movie{
-      background: url(../images/iphone.png)no-repeat 50% 50% / cover !important;
-      width: 30% !important;
-     } 
-     .kakao_container{
-      width: 70% !important;
-      z-index: 1 !important;
-      opacity: 0.7;
-      
-      .kakao_skill{
-        span{
-          margin-bottom: 1rem !important;
-        }   
-      }
-      .kakao_overview{
-        margin-top: 2rem !important;
-        h3{
-          font-size: 1.5rem !important;
-           &:hover{
-          width: 15vw !important;
-        }
-        }
-       
-        p{
-          width: 40vw !important;
+  .kakao_main{
+    .kakao_section{
+      border: 1px solid blue;
+      width: 90%;
+      height: 87vh;
+      .kakao_movie{
+        position: relative;
+        top: 10%;
+        left: 15%;
+        width: 274px;
+        height: 59vh;
+        border: 10px solid #000;
+        border-radius: 20px;
+        .kakao_app{
+          width: 274px;
         }
       }
-      .kakao_description{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      h3{
-        font-size: 1.5rem !important;
-        &:hover{
-          width: 17vw !important;
+      .kakao_container{
+        position: absolute;
+        left: 0%;
+        width: 95% !important;
+        z-index: 1 !important;
+        opacity: 0.8;
+        .kakao_header{
+          .goo {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            filter: url(#filter);
+            
+            h1 {
+              font-weight: bold;
+              font-size: 2rem;
+              color: rgba(250, 206, 0, 1);
+              text-shadow: 10px 1px 0 #002d54;
+
+            }  
+            .drop {
+              display: none;
+              opacity: 0;
+              width: 30px;
+              height: 40px;
+              background: rgba(250, 206, 0, 1);
+              border-radius: 1000px;
+              position: absolute;
+              animation: drip 7s infinite;
+              border: 2px solid #002d54;
+              border-top: none;
+              top: 0;
+              left: 200px;
+            }
+            .drop:nth-child(2) {
+              left: 300px;
+              animation-delay: 3s;
+            }
+            .drop:nth-child(3) {
+              left: 500px;
+              animation-delay: 2s;
+              display: none;
+            }
+            .drop:nth-child(4) {
+              left: 400px;
+              animation-delay: 4s;
+              display: none;
+            }
+            .drop:nth-child(5) {
+              left: 600px;
+              animation-delay: 1.5s;
+              display: none;
+            }
+            .drop:nth-child(6) {
+              left: 150px;
+              animation-delay: 5s;
+            }
+            
+            @keyframes drip {
+              0% {
+                opacity: 0;
+                transform: translateY(0);
+              }
+              35% {
+                opacity: 1;
+                transform: translateY(30px);
+              }
+              50% {
+                transform: translateY(100vh);
+              }
+              100% {
+                transform: translateY(100vh);
+              }
+            }
+          }
+
+        }
+        .kakao_skill{
+          margin-top: 0;
+          span{
+           
+          }
+        }
+        .kakao_date{
+          margin: 1.5rem;
+          margin-left: 17rem;
+        }
+        .kakao_overview{
+          position: absolute;
+          bottom: 1%;
+          p{
+            width: 20vw;
+   
+          }
+        }
+        .kakao_description{
+          position: absolute;
+          right: -2%;
+          bottom: -1%;
+          .kakao_des{
+            border-radius: 20px;
+            width: 48vw;
+            padding: 1rem;
+            background-color: #036825;
+            
+            p{
+              color: #fff;
+              font-size: 1rem;
+              font-weight: 400;
+              line-height: 1.2;
+            }
+          }
+        }
+        .kakao_nav{
+          bottom: 15%;
         }
       }
-      .kakao_des{
-        width: 41vw !important;
-        margin-bottom: 10rem !important;
-      }
-     }
-     .goo{
-      filter: none !important;
-      h1{
-        font-size: 2.5rem !important;
-        color: #fff !important;
-        margin-left: 1rem !important;
-        margin-top: 3rem !important; 
-      }
-      .drop{
-        display: none !important;
-      }
-     }
+    }
   }
 
 }
@@ -291,7 +367,18 @@
   .kakao_main{
     .kakao_section{
       .kakao_movie{
-
+        position: relative;
+        top: 10%;
+        left: 1%;
+        width: 300px;
+        height: 64vh;
+        border: 10px solid #000;
+        border-radius: 20px;
+  
+        .kakao_app{
+          width: 299px;
+        }
+  
       }
       .kakao_container{
         .kakao_header{
@@ -309,6 +396,7 @@
 
             }  
             .drop {
+              display: none;
               opacity: 0;
               width: 30px;
               height: 40px;
@@ -373,6 +461,7 @@
 
         }
         .kakao_overview{
+          margin: 0;
           p{
 
           }

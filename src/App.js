@@ -14,21 +14,43 @@ import Menu from './sections/Menu';
 import Call from './sections/Call';
 import { BrowserRouter } from 'react-router-dom';
 import Phone from './sections/Phone';
-
-
-
+import React, { useEffect, useRef } from 'react';
 
 
 function App() {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const handleWheel = (e) => {
+      e.preventDefault();
+  
+      const delta = e.wheelDelta > 0 ? -1 : 1; 
+  
+      window.scrollBy({
+        top: delta * window.innerHeight,
+        behavior: 'smooth',
+      });
+    };
+  
+    window.addEventListener('wheel', handleWheel, { passive: false });
+  
+    return () => {
+      window.removeEventListener('wheel', handleWheel);
+    };
+  }, []);
+
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <div className="app"> 
+    <div
+      className="app"
+      // ref={containerRef}    
+    >
     <>
-    <Main />
-    <Face />
+    <Main/>
+    <Face  />
     <Settings />
-    <Phone />
+    <Phone  />
     <Introduce />
     <Menu />
     <Call />
@@ -38,7 +60,7 @@ function App() {
     <Kakao />
     <Netflix />
     <Facebook />
-    <Off />
+    <Off/>
     </>  
     </div>
     </BrowserRouter>

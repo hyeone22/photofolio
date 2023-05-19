@@ -1,7 +1,6 @@
 .kosdaq_main{
   width: 95%;
   height: 100vh;
-  border: 1px solid red;
   box-sizing: border-box;
   position: relative;
   margin: 0 auto;
@@ -13,14 +12,14 @@
     width: 95%;
     left: 2%;
     top: 5%;
-    border: 1px solid blue;
+
     .kosdaq_movie{
       width: 43vw;
       height: 90vh;
 
       .kodsaq_movie_section{
 
-        border: 1px solid orange;
+
         width: 43vw;
         height: 100%;
         object-fit: contain;
@@ -32,7 +31,7 @@
           height: 100%;
           .kosdaq_pc{
             border: 13px solid black;
-            box-shadow: 10px 5px 5px #fff;
+            // box-shadow: 10px 5px 5px #fff;
             width: 42vw;
             position: absolute;
             top: 11.5%;
@@ -73,7 +72,7 @@
     .kosdaq_container{
       width: 50vw;
       height: 90vh;
-      border: 1px solid green;
+
       margin: 0 auto;
       .kosdaq_search{
         width: 40vw;
@@ -94,7 +93,7 @@
         flex-direction: column;
         width: 40vw;
         height: 13vh;
-        border: 1px solid red;
+
         margin: 1rem auto;
         background-color: #000;
         border-radius: 20px;
@@ -172,7 +171,7 @@
         flex-direction: column;
         width: 40vw;
         height: 18vh;
-        border: 1px solid red;
+ 
         margin: 0 auto;
         padding: 1rem;
         border-radius: 20px;
@@ -252,7 +251,7 @@
         .kosdaq_info{
           width: 18vw;
           height: 35vh;
-          border: 1px solid red;
+ 
           padding: 1rem;
           background-color: #000;
           border-radius: 20px;
@@ -260,7 +259,7 @@
         .kosdaq_info2{
           width: 18vw;
           height: 35vh;
-          border: 1px solid green;
+
           padding: 1rem;
           background-color: #000;
           border-radius: 20px;
@@ -299,7 +298,7 @@
       .kosdaq_content{
         display: flex;
         flex-direction: column;
-        border: 1px solid red;
+     
         height: 27vh;
         h3{
           color: #fff;
@@ -317,7 +316,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border: 1px solid red;
+  
 
         p{
           color: #ABB2BF;
@@ -336,26 +335,63 @@
   .kosdaq_main{
     .kosdaq_section{
       flex-direction: column-reverse; 
+      box-sizing: border-box;
       .kosdaq_movie{
         width: 95%;
-        height: 41vh;
-        border: 1px solid orange;
+        height: 90vh;
         margin: 0 auto;
+  
         .kodsaq_movie_section{
+  
+    
           width: 100%;
+          height: 100%;
+          object-fit: contain;
+          position: relative;
           .kosdaq_desk{
-              width: 400px;
-              // width: 400px;
-              margin: 0 auto;
+            position: relative;
+            background: url(../images/Front2.png)no-repeat 50% 0 / contain;
+            width: 100%;
+            height: 100%;
             .kosdaq_pc{
-              width: 380px;
-              // width: 380px;
-              top: 5%;
+              border: 13px solid black;
+              top: 0;
+              width:94%;
+              position: absolute;
+  
               border-radius: 20px 20px 0 0;
-              min-height: 150px;
+              min-height: 33px;
+            }
+          } 
+          .kosdaq_mac{
+            border: 10px solid black;
+            border-radius: 20px;
+            width: 204px;
+            position: absolute;
+            right: 0;
+            top: 35%;
+            z-index: 1;
+            .kosdaq_tablet{
+              width: 204px;
+            }
+          } 
+          .kosdaq_phone{
+            border: 10px solid black;
+            border-radius: 20px;
+            height: 200px;
+            width: 97px;
+            position: absolute;
+            left: 1%;
+            top: 38%;
+            z-index: 1;
+            .kosdaq_mobile{
+              height: 200px;
+              width: 97px;
             }
           }
         }
+  
+       
       }
       .kosdaq_container{
         width: 95%;
@@ -437,6 +473,62 @@
       }
     }
   }
+        .kosdaq_movie{
+
+  
+        .kodsaq_movie_section{
+  
+    
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          position: relative;
+          .kosdaq_desk{
+            position: relative;
+            background: url(../images/Front2.png)no-repeat 50% 50% / contain;
+            width: 100%;
+            height: 100%;
+  
+            .kosdaq_pc{
+              border: 13px solid black;
+              top: 0;
+              width:92% !important;
+              position: absolute;
+  
+              border-radius: 20px 20px 0 0;
+              min-height: 33px;
+            }
+          } 
+          .kosdaq_mac{
+            border: 10px solid black;
+            border-radius: 20px;
+            width: 204px;
+            position: absolute;
+            right: 0;
+            top: 59% !important;
+            z-index: 1;
+            .kosdaq_tablet{
+              width: 204px;
+            }
+          } 
+          .kosdaq_phone{
+            border: 10px solid black;
+            border-radius: 20px;
+            height: 200px;
+            width: 97px;
+            position: absolute;
+            left: 3% !important;
+            top: 45% !important;
+            z-index: 1;
+            .kosdaq_mobile{
+              height: 200px;
+              width: 97px;
+            }
+          }
+        }
+  
+       
+      }
 }
 
 
