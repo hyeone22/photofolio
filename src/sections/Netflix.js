@@ -8,7 +8,7 @@ import { FaGithub,FaPlay } from "react-icons/fa";
 function Netflix() {
 
   const url = 'https://github.com/hyeone22/netflix_app_2023';
-  const url1 = 'https://hyeone22.github.io/netflix_app_2023';
+  const url1 = 'https://hyeone22.github.io/netflix_app_2023/';
   return (
     <div className='netflix_main'>
       <Header />
