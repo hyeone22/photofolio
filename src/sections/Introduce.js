@@ -21,10 +21,27 @@ function Introduce() {
         
       <div className='introduce_face'>
         <div className='introduce_my'>
-          <div className='introduce_myslef'>
-            <h2></h2>  
-          </div>  
+  
           <img src={img} className='face_1' alt='' /> 
+          <div className='introduce_myslef'>
+          <div className='setting_content'>
+
+        <div className='setting_index'>
+          <div className='setting_idx'>
+            <h4>Infomation</h4>
+            <p>김승현</p>
+            <p>강남대학교 졸업</p>
+            <p>010-5635-0561</p>
+            <p>wmfrjdnsakdma12@naver.com</p>
+            <p>https://github.com/hyeone22</p>  
+          </div>
+          <div className='setting_idx'>
+            <h4>Education</h4> 
+            <p>강남 이젠아카데미 UI/UX 웹&앱디자인&프론트엔드 수료</p>
+          </div>
+        </div>
+      </div>    
+          </div> 
         </div>
         
         <img src={img2} className='face_2' alt='' style={{display:'none'}} /> 

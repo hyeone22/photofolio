@@ -3,7 +3,8 @@
   height: 100vh;
   box-sizing: border-box;
   position: relative;
-  margin: 0 auto;
+
+  border: 1px solid red;
   .kosdaq_section{
     display: flex;
     flex-direction: row;

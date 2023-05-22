@@ -1,16 +1,13 @@
 .face_main{
   width: 95%;
   height: 100vh;
-  margin: 0 auto;
   box-sizing: border-box;
   background: #000;
   position: relative;
   border: 20px solid #222;
   border-radius: 30px;
-  box-sizing: border-box;
-
   .face_section{
-    height: 90vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

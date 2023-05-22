@@ -1,7 +1,6 @@
 .phone_main{
   width: 95%;
   height: 100vh;
-  margin: 0 auto;
   box-sizing: border-box;
   background: #000;
   position: relative;
@@ -11,7 +10,6 @@
   display: flex;
   flex-direction: column;
   .phone_header{
-
     margin: 5rem auto;
     .fall-out{
       color: #fff;

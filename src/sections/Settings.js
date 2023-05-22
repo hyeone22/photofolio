@@ -34,14 +34,12 @@ function Settings() {
         </defs>
       </svg>
         <div className='setting_text'>
-          <h2>신속한 
-            <b>
-              변화
+          <h2>신속한<b> 변화
               <svg viewBox="0 0 70 36">
                  <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
               </svg>
             </b>
-            에 적응하는 개발자</h2>
+            에 적응하는 프론트엔드개발자</h2>
           <p>오늘날 우리는 모든 것이 신속히 변하는 시대에 살고 있습니다. 이러한 변화와 적응의 요인은 정보화, 소프트화, 서비스화, 세계화의 급진전 등의 여러 가지 형태에 기인합니다.<br/>
             눈 깜짝할 사이에 패러다임이 변하고 주변 환경은 급격히 변합니다. 이러한 상황과 환경 목적과 목표에 따라 수시로 변화 적응하는 위기를 기회로 바꾸고<br/> 장애물을 목적에 맞게
             변화 시키는 계속해서 자신만의 존재가치를 증명하는 프론트엔드 개발자가 되겠습니다.
@@ -56,17 +54,15 @@ function Settings() {
       <div className='setting_content'>
         <div className='setting_contents'>
         <h3>Upgrade</h3>
-        <svg class="spinner" width="65" height="65" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-           <circle class="path1" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-        </svg>
         </div>
         <div className='setting_index'>
           <div className='setting_idx'>
             <h4>Infomation</h4>
-            <p>김승현(27)</p>
+            <p>김승현</p>
             <p>강남대학교 졸업</p>
             <p>010-5635-0561</p>
-            <p>wmfrjdnsakdma12@naver.com</p>  
+            <p>wmfrjdnsakdma12@naver.com</p>
+            <p>https://github.com/hyeone22</p>  
           </div>
           <div className='setting_idx'>
             <h4>Education</h4> 

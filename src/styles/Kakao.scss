@@ -1,16 +1,16 @@
 .kakao_main{
   width: 95%;
   height: 100vh;
-
   box-sizing: border-box;
   position: relative;
-  margin: 0 auto;
+
+  border: 1px solid red;
   .kakao_section{
     display: flex;
     flex-direction: row;
     position: absolute;
     height: 87vh;
-    width: 85%;
+    width: 90%;
     left: 50%;
     top: 52%;
     transform: translate(-50%, -50%);
@@ -21,13 +21,13 @@
       position: relative;
       top: 10%;
       left: 1%;
-      width: 400px;
+      width: 356px;
       height: 74vh;
       border: 10px solid #000;
       border-radius: 20px;
 
       .kakao_app{
-        width: 345px;
+        width: 349px;
       }
 
     }
