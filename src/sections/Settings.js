@@ -64,7 +64,7 @@ function Settings() {
           <div className='setting_idx'>
             <h4>Infomation</h4>
             <p>김승현(27)</p>
-            <p>강남대학교 학사 졸업</p>
+            <p>강남대학교 졸업</p>
             <p>010-5635-0561</p>
             <p>wmfrjdnsakdma12@naver.com</p>  
           </div>

@@ -40,10 +40,10 @@
 }
   .container {
     position: relative;
-    z-index: 10;
     display: grid;
     place-items: center;
     height: 100vh;
+    z-index: 100;
     h2{
       position: absolute;
 
@@ -61,15 +61,11 @@
         padding-block-end: 24px;
         perspective: 100px;
         width: 100%;
-
-        z-index: 10;
         .carousel__wrapper {
           position: relative;
           display: flex;
           justify-content: center;
           height: 61.2vh;
-
-          z-index: 10;
           .item{
   
             position: absolute;
@@ -145,7 +141,7 @@
               border-radius: 15px;
               .picture{
                 background: url(../images/main_video_thum2.jpg)no-repeat 0 0 / cover;
-                width: 21vw;
+                width: 21.8vw;
                 height: 32vh;
                 border-radius: 15px 15px 0 0;
               }
@@ -167,7 +163,7 @@
                 border-radius: 15px;
                 .picture{
                   background: url(../images/kakao.jpg)no-repeat 0 0 / cover;
-                  width: 21vw;
+                  width: 21.8vw;
                   height: 32vh;
                   border-radius: 15px 15px 0 0;
                 }
@@ -187,7 +183,7 @@
                 border-radius: 15px;
                 .picture{
                   background: url(../images/cj_screen.png)no-repeat 0 0 / cover;
-                  width: 21vw;
+                  width: 21.8vw;
                   height: 32vh;
                   border-radius: 15px 15px 0 0;
                 }
@@ -207,7 +203,7 @@
                 border-radius: 15px;
                 .picture{
                   background: url(../images/netflix.png)no-repeat 50% 0 / cover;
-                  width: 21vw;
+                  width: 21.8vw;
                   height: 32vh;
                   border-radius: 15px 15px 0 0;
                 }
@@ -227,7 +223,7 @@
                 border-radius: 15px;
                 .picture{
                   background: url(../images/img_mvisual01.png)no-repeat 0 0 / cover;
-                  width: 21vw;
+                  width: 21.8vw;
                   height: 32vh;
                   border-radius: 15px 15px 0 0;
                 }
@@ -245,8 +241,8 @@
                 height: 100%;
                 border-radius: 15px;
                 .picture{
-                  background: url(../images/img_mvisual01.png)no-repeat 0 0 / cover;
-                  width: 21vw;
+                  background: url(../images/facebook.png)no-repeat 50% 0 / cover;
+                  width: 21.8vw;
                   height: 32vh;
                   border-radius: 15px 15px 0 0;
                 }
@@ -266,7 +262,7 @@
                 border-radius: 15px;
                 .picture{
                   background: url(../images/img_mvisual01.png)no-repeat 0 0 / cover;
-                  width: 21vw;
+                  width: 21.8vw;
                   height: 32vh;
                   border-radius: 15px 15px 0 0;
                 }

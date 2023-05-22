@@ -18,7 +18,7 @@ function Call() {
     <div className='call_main' id='ofSection'>
       
     <div class="container">
-    <Background />
+      <Background/>
     <h2  data-aos="fade-right">Home</h2>
   <aside class="carousel">
     <div class="carousel__wrapper">

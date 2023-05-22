@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Facebook.scss';
 import Background from 'components/Background';
 import Header from 'components/Header';
+import video from '../video/Facebook_emoji.mp4';
 
 
 function Facebook() {
@@ -22,7 +23,7 @@ function Facebook() {
   
     </div>
     <div className='facebook_movie'>
-      
+      <video className='facebook_video'  src={video} muted autoPlay loop />  
     </div> 
     <div className='facebook_skill'>
       <h3>Facebook Emoji</h3>
