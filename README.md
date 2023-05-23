@@ -5,19 +5,19 @@
 ## Index
 
 1.ON
-1-1. Face ID
-1-2. Update
-1-3. Call
-1-4. Introduce
-1-5. Home
-2-1 Project Index
-2-2 기업사이트 삼성전기
-2-3 기업사이트 CJ ONE
-2-4 기업사이트 코스닥 글로벌 세그먼트
-2-5 KAKAOTALK REACT APP
-2-6 NETFLIX REACT APP
-2-7 Facebook Emoji
-2-8 OFF
+2. Face ID
+3. Update
+4. Call
+5. Introduce
+6. Home
+7. Project Index
+8. 기업사이트 삼성전기
+9. 기업사이트 CJ ONE
+10. 기업사이트 코스닥 글로벌 세그먼트
+11. KAKAOTALK REACT APP
+12. NETFLIX REACT APP
+13. Facebook Emoji
+14. OFF
 
 
 
