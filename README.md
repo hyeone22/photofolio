@@ -4,7 +4,7 @@
 
 ## Index
 
-1.ON
+1. ON
 2. Face ID
 3. Update
 4. Call
