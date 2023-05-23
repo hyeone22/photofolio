@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/photofolio/static/css/main.4bb00575.css",
-    "main.js": "/photofolio/static/js/main.dffa7eab.js",
+    "main.css": "/photofolio/static/css/main.e00f0be1.css",
+    "main.js": "/photofolio/static/js/main.a8d18fd9.js",
     "static/media/cj-pc.mp4": "/photofolio/static/media/cj-pc.697f0c225f7a6cb2c7c7.mp4",
+    "static/media/Netflix_pc.mp4": "/photofolio/static/media/Netflix_pc.5a2070be7f8ae1a83233.mp4",
     "static/media/se_pc.mp4": "/photofolio/static/media/se_pc.263b1858d608f15c7857.mp4",
     "static/media/kakao_app.mp4": "/photofolio/static/media/kakao_app.3287e778b548955b7f62.mp4",
     "static/media/cj_tablet.mp4": "/photofolio/static/media/cj_tablet.5574b88db0e633515307.mp4",
@@ -22,12 +23,13 @@
     "static/media/Front2.png": "/photofolio/static/media/Front2.ab6e188f3d0d73e6a99c.png",
     "static/media/facebook.png": "/photofolio/static/media/facebook.0a7368495be0ea677aa9.png",
     "static/media/kakao.jpg": "/photofolio/static/media/kakao.9785ba2591a3bedee686.jpg",
+    "static/media/bubble.jpg": "/photofolio/static/media/bubble.9c25b3c5b32860c58d88.jpg",
     "index.html": "/photofolio/index.html",
-    "main.4bb00575.css.map": "/photofolio/static/css/main.4bb00575.css.map",
-    "main.dffa7eab.js.map": "/photofolio/static/js/main.dffa7eab.js.map"
+    "main.e00f0be1.css.map": "/photofolio/static/css/main.e00f0be1.css.map",
+    "main.a8d18fd9.js.map": "/photofolio/static/js/main.a8d18fd9.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bb00575.css",
-    "static/js/main.dffa7eab.js"
+    "static/css/main.e00f0be1.css",
+    "static/js/main.a8d18fd9.js"
   ]
 }
