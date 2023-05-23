@@ -1,12 +1,12 @@
 .cj_main {
   width: 95%;
   height: 100vh;
-  border: 1px solid red;
+
   box-sizing: border-box;
 
   position: relative;
   .cj_section {
-    border: 1px solid blue;
+
     width: 70vw;
     height: 88vh;
     position: absolute;
@@ -44,7 +44,7 @@
       flex-direction: row;
       justify-content: flex-end;
       .movie_section{
-        border: 1px solid red;
+
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -121,7 +121,7 @@
       font-size: 2rem;
       color: #303030;
       background: conic-gradient(from 180deg at 100% calc(100% - 1rem), #303030 0 25%, #fff0 0 100%), conic-gradient(from 180deg at 1rem 50%, #303030 0 25%, #fff0 0 100%), conic-gradient(from 0deg at calc(100% - 1rem) 50%, #303030 0 25%, #fff0 0 100%), conic-gradient(from 0deg at 0rem 1rem, #303030 0 25%, #fff0 0 100%);
-      border: 1px solid blue;
+
     } 
     blockquote:before, 
     blockquote:after {
@@ -147,10 +147,12 @@
       left: inherit;
     }
     .faq {
-
+      color: #fff;
+      font-weight: bold;
+      font-size: 2rem;
       list-style: none;
       background-color: #000;
-      padding-left: 4rem;
+      padding-left: 2rem;
       border-radius: 0 0 20px 20px;
     }
 
@@ -158,6 +160,7 @@
       max-height: 275px !important;
       padding-bottom: 20px;
       transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+     
     }
     .faq li.active .question {
       color: #808080;
@@ -170,13 +173,14 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+      padding-left: 4rem;
     }
     .faq .plus-minus-toggle {
       cursor: pointer;
       height: 21px;
       position: absolute;
       width: 21px;
-      left: -40px;
+      left: 20px;
       top: 50%;
       z-index: 2;
     }
@@ -208,14 +212,179 @@
       cursor: pointer;
       padding: 20px 0;
       transition: color 0.5s ease;
+      padding-left: 4rem;
     }  
 
   }
   .cj_section.toggled {
     background-color: #ccc;
+  
+  }
+  .cj_skill{
+
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    position: absolute;
+    right: 0;
+    bottom: 18%;
+    span{
+      padding: 0.5rem;
+      border: 1px solid #ABB2BF;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-left: 0.4rem;
+      transition: ease 0.5s;
+      &:hover{
+        color: #000;
+        background-color: #fff;
+      }
+    }
   }
 }
-@media (max-width: 768px) {
+@media (min-width:0px) and (max-width:499px) {
+  .cj_main{
+    .cj_section{
+      width: 85%;
+      top: 52%;
+      .cj_header{
+        height: 5vh;
+        span:after{
+          width: 2vw;
+          height: 1vh;
+        }
+      }  
+      .cj_movie{
+        background-color: rgba(28, 28, 30, 1);
+        width: 80vw;
+        height: 43vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .movie_section{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          position: relative;
+          background: url(../images/Front2.png)no-repeat 0 0 / contain;
+          .cj_pc{
+            
+            width: 100%;
+      
+           
+          }
+          .cj_pc_mok{
+              border: 10px solid black;
+              border-radius: 20px;
+              height: 250px;
+              width: 120px;
+              position: absolute;
+              left: 0%;
+              top: 20%;
+  
+            .cj_pc1{
+              height: 250px;
+   
+            }
+          }
+          .cj_tablet_mok{
+            border: 10px solid black;
+            border-radius: 20px;
+            width: 200px;
+            position: absolute;
+            right: 0%;
+            top: 35%;
+  
+            .cj_tablet{
+              width: 200px;
+
+
+
+            }
+          }
+  
+        }
+  
+        
+      }
+      .cj_title{
+        h2{
+          font-size: 7rem;
+     
+        }
+        span{
+          padding: 0.5rem;
+        }
+      }
+      p{
+        top: 64%;
+        font-size: 0.8rem;
+        left:15%;
+        
+      }
+      blockquote{
+        padding-bottom: 3rem;
+
+      }
+      blockquote:after{
+        bottom: 1rem;
+        right: -2rem;
+      }
+      blockquote:before{
+        top: 2rem;
+        left: -2rem;
+      }
+      .faq{
+        padding-left: 1rem;
+        font-size: 2rem !important; 
+
+        li{
+          .question{
+            font-size: 2rem;
+          }
+        }
+      }
+      .faq .plus-minus-toggle {
+        cursor: pointer;
+        height: 8px;
+        position: absolute;
+        width: 8px;
+        left: 5px;
+        top: 50%;
+        z-index: 2;
+      }
+      .cj_skill{
+
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+        position: absolute;
+        right: 0;
+        bottom: 27.5%;
+        span{
+          padding: 0.7rem;
+          border: 1px solid #ABB2BF;
+          cursor: pointer;
+          font-size: 0.9rem;
+          font-weight: bold;
+          margin-left: 0.4rem;
+          transition: ease 0.5s;
+          &:hover{
+            color: #000;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:500px) and (max-width: 768px) {
   .cj_main{
     .cj_section{
       width: 85%;
@@ -235,15 +404,16 @@
         flex-direction: row;
         justify-content: flex-end;
         .movie_section{
-          border: 1px solid red;
+  
           width: 100%;
           height: 100%;
           object-fit: contain;
           position: relative;
-          background: url(../images/Front2.png)no-repeat 50% 50% / contain;
+          background: url(../images/Front2.png)no-repeat 0 0 / contain;
           .cj_pc{
-            margin-top: 2rem;
+            
             width: 100%;
+      
            
           }
           .cj_pc_mok{
@@ -264,12 +434,13 @@
             border: 10px solid black;
             border-radius: 20px;
             width: 200px;
-
             position: absolute;
             right: 0%;
+            top: 45%;
   
             .cj_tablet{
               width: 200px;
+
 
 
             }
@@ -307,11 +478,45 @@
         left: -2rem;
       }
       .faq{
-        padding-left: 7rem;
+        padding-left: 1rem;
+        font-size: 3rem !important; 
 
         li{
           .question{
             font-size: 2rem;
+          }
+        }
+      }
+      .faq .plus-minus-toggle {
+        cursor: pointer;
+        height: 14px;
+        position: absolute;
+        width: 14px;
+        left: 5px;
+        top: 50%;
+        z-index: 2;
+      }
+      .cj_skill{
+
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+        position: absolute;
+        right: 0;
+        bottom: 25.5%;
+        span{
+          padding: 0.7rem;
+          border: 1px solid #ABB2BF;
+          cursor: pointer;
+          font-size: 0.9rem;
+          font-weight: bold;
+          margin-left: 0.4rem;
+          transition: ease 0.5s;
+          &:hover{
+            color: #000;
+            background-color: #fff;
           }
         }
       }
@@ -333,7 +538,7 @@
         flex-direction: row;
         justify-content: flex-end;
         .movie_section{
-          border: 1px solid red;
+
           width: 100%;
           height: 100%;
           object-fit: contain;
@@ -376,6 +581,30 @@
   
         
       }
+      .cj_skill{
+
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+        position: absolute;
+        right: 0;
+        bottom: 23.7%;
+        span{
+          padding: 0.7rem;
+          border: 1px solid #ABB2BF;
+          cursor: pointer;
+          font-size: 0.9rem;
+          font-weight: bold;
+          margin-left: 0.4rem;
+          transition: ease 0.5s;
+          &:hover{
+            color: #000;
+            background-color: #fff;
+          }
+        }
+      }
     }
   }
 }
@@ -394,7 +623,7 @@
         flex-direction: row;
         justify-content: flex-end;
         .movie_section{
-          border: 1px solid red;
+
           width: 100%;
           height: 100%;
           object-fit: contain;
@@ -436,6 +665,30 @@
         }
   
         
+      }
+      .cj_skill{
+
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+        position: absolute;
+        right: 0;
+        bottom: 20%;
+        span{
+          padding: 0.7rem;
+          border: 1px solid #ABB2BF;
+          cursor: pointer;
+          font-size: 0.9rem;
+          font-weight: bold;
+          margin-left: 0.4rem;
+          transition: ease 0.5s;
+          &:hover{
+            color: #000;
+            background-color: #fff;
+          }
+        }
       }
     }
   }

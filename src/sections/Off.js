@@ -16,6 +16,9 @@ function Off() {
 
   const formattedHour = currentTime.getHours().toString().padStart(2, "0");
   const formattedMin = currentTime.getMinutes().toString().padStart(2, "0");
+
+  const url = 'https://github.com/hyeone22'
+
   return (
     <div className='off_main' id="offSection">
     <Header />
@@ -41,7 +44,7 @@ function Off() {
         <h3>김승현이(가) 비활성화되었음</h3>
         <p>010-5635-0561</p>
         <p>wmfrjdnsakdma12@naver.com</p>
-        <p>https://github.com/hyeone22</p> 
+        <p onClick={()=>{window.open(url)}}>https://github.com/hyeone22</p> 
       </div>
       <span className='off_call'>긴급통화</span>
     </div>

@@ -16,7 +16,7 @@ function Kakao() {
   const url1 = 'https://hyeone22.github.io/kakaotalk_2023';
 
   return (
-    <div className='kakao_main'>
+    <div className='kakao_main' id='kakao_page'>
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 0 0" width="0" height="0" style={{display:'none'}}>
   <defs>
     <filter id="goo">

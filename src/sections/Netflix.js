@@ -3,6 +3,7 @@ import '../styles/Netflix.scss';
 import Background from 'components/Background';
 import Header from 'components/Header';
 import { FaGithub,FaPlay } from "react-icons/fa";
+import video from '../video/Netflix_pc.mp4';
 
 
 function Netflix() {
@@ -10,7 +11,7 @@ function Netflix() {
   const url = 'https://github.com/hyeone22/netflix_app_2023';
   const url1 = 'https://hyeone22.github.io/netflix_app_2023/';
   return (
-    <div className='netflix_main'>
+    <div className='netflix_main' id='netflix_page'>
       <Header />
       <div className='netflix_section'>
         <div className='netflix_content'>
@@ -23,6 +24,9 @@ function Netflix() {
               <span>Javascript</span>
               <span>Firebase</span>
               <span>Styled-Component</span>
+            </div>
+            <div className='netflix_date'>
+              <span>2023.00 ~ 2023.00</span>
             </div>
           </div>
           <div className='netflix_desc'>
@@ -42,7 +46,11 @@ function Netflix() {
           </div>
         </div>
         <div className='netflix_movie'>
-
+          <div className='net_mokup'>
+          <video className='net_pc' src={video}
+              muted autoPlay loop>  
+              </video>
+          </div>
         </div>
       </div>
     </div>

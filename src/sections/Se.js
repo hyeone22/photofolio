@@ -67,7 +67,7 @@ function Se() {
   const url3 = "https://github.com/hyeone22/project_se";
 
   return (
-    <div className='se_main' ref={componentRef}>
+    <div className='se_main' id='se_page' ref={componentRef}>
       <div className="bg">
         <Background />
       <div className="loading-text" >{load}%</div>
@@ -106,9 +106,10 @@ function Se() {
                     웹 표준성을 준수하여 제작</p>
                 <p>리뉴얼된 삼성전기 홈페이지의 인터렉션과
                     디자인 적용</p>
-                <span onClick={()=>{window.open(url3)}}>Github</span>     
+                    
               </div>
               <div className='se_skill'>
+              <span onClick={()=>{window.open(url3)}}>Github</span> 
                 <span onClick={()=>{window.open(url)}}>Main</span>
                 <span onClick={()=>{window.open(url1)}}>Sub</span>
                 <span onClick={()=>{window.open(url2)}}>Sub1</span>     
@@ -126,7 +127,7 @@ function Se() {
               <div className='se_title'>
                  <h3 className='se_h3'>Project Info</h3>
                 <p>2023.00.00</p>
-                <p>HTML/CSS/W3C/SEO 웹 접근성 검사 첨부</p>
+                <p>HTML/CSS/W3C/SEO 웹 접근성 검사 결과 첨부</p>
               </div>
               <div className='se_skill'>
                 <span>Show !</span>

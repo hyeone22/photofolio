@@ -13,11 +13,22 @@ function Call() {
   },[]);
 
   const url ="https://hyeone22.github.io/project_se"
+  const url1="https://hyeone22.github.io/kakaotalk_2023/"
+  const url2="https://hyeone22.github.io/project_cj/"
+  const url3="https://hyeone22.github.io/netflix_app_2023/"
+  const url4="https://hyeone22.github.io/project_website/"
+
+
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className='call_main' id='ofSection'>
-      
-    <div class="container">
       <Background/>
     <h2  data-aos="fade-right">Home</h2>
   <aside class="carousel">
@@ -34,8 +45,8 @@ function Call() {
           <h3>삼성전기</h3>
           <p>삼성전기 기업 웹사이트 제작</p>
           <div className='box2'>
-          <span onClick={()=>{window.open(url)}}>Go</span>
-          <span>Cached</span>  
+          <span onClick={()=>{scrollToSection('se_page')}}>Go</span>
+          <span onClick={()=>{window.open(url)}}>Github</span>  
           </div> 
         </div>  
       </div>
@@ -52,8 +63,8 @@ function Call() {
           <h3>KAKAOTALK APP</h3>
           <p>카카오톡 웹/앱 React 제작</p>
           <div className='box2'>
-          <span>Go</span>
-          <span>Cached</span>  
+          <span onClick={()=>{scrollToSection('kakao_page')}}>Go</span>
+          <span onClick={()=>{window.open(url1)}}>Github</span>  
           </div> 
         </div>  
       </div>
@@ -70,8 +81,8 @@ function Call() {
           <h3>CJ ONE</h3>
           <p>CJ ONE 반응형 웹사이트 제작</p>
           <div className='box2'>
-          <span>Go</span>
-          <span>Cached</span>  
+          <span onClick={()=>{scrollToSection('cj_page')}}>Go</span>
+          <span onClick={()=>{window.open(url2)}}>Github</span>  
           </div> 
         </div>  
       </div>
@@ -89,8 +100,8 @@ function Call() {
           <h3>NETFLIX APP</h3>
           <p>넷플릭스 웹/앱 React 제작</p>
           <div className='box2'>
-          <span>Go</span>
-          <span>Cached</span>  
+          <span onClick={()=>{scrollToSection('netflix_page')}}>Go</span>
+          <span onClick={()=>{window.open(url3)}}>Github</span>  
           </div> 
         </div>  
         </div>
@@ -107,8 +118,8 @@ function Call() {
             <h3>코스닥 글로벌 세그먼트</h3>
             <p>코스닥 글로벌 반응형 웹사이트 제작</p>
             <div className='box2'>
-            <span>Go</span>
-            <span>Cached</span>  
+            <span onClick={()=>{scrollToSection('kosdaq_page')}}>Go</span>
+            <span onClick={()=>{window.open(url4)}}>Github</span>  
             </div> 
           </div>  
         </div>
@@ -122,10 +133,10 @@ function Call() {
           </div>
           <div className='box1'>
             <h3>Facebook Emoji</h3>
-            <p>설명</p>
+            <p>CSS를 이용한 애니매이션</p>
             <div className='box2'>
-            <span>Go</span>
-            <span>Cached</span>  
+            <span onClick={()=>{scrollToSection('facebook_page')}}>Go</span>
+  
             </div> 
           </div>  
         </div>
@@ -138,11 +149,11 @@ function Call() {
           <p>CSS</p>
         </div>
         <div className='box1'>
-          <h3>Pure CSS</h3>
-          <p>설명</p>
+          <h3>Home</h3>
+          <p>Home으로 돌아가기</p>
           <div className='box2'>
-          <span>Go</span>
-          <span>Cached</span>  
+          <span onClick={()=>{scrollToSection('menu_section')}}>Go</span>
+ 
           </div> 
         </div>  
       </div>
@@ -150,7 +161,7 @@ function Call() {
     </div>
   </aside>
 
-</div>
+
     </div>
   )
 }

@@ -18,7 +18,7 @@ function Kosdaq() {
   const url = 'https://github.com/hyeone22/project_website'
 
   return (
-    <div className='kosdaq_main'>
+    <div className='kosdaq_main' id='kosdaq_page'>
       <Background />
       <div className='kosdaq_section'>
         <div className='kosdaq_movie'>

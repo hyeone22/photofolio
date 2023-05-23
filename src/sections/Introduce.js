@@ -30,14 +30,19 @@ function Introduce() {
           <div className='setting_idx'>
             <h4>Infomation</h4>
             <p>김승현</p>
-            <p>강남대학교 졸업</p>
             <p>010-5635-0561</p>
             <p>wmfrjdnsakdma12@naver.com</p>
             <p>https://github.com/hyeone22</p>  
           </div>
           <div className='setting_idx'>
             <h4>Education</h4> 
-            <p>강남 이젠아카데미 UI/UX 웹&앱디자인&프론트엔드 수료</p>
+            <p>이젠아카데미 UI/UX 웹&앱디자인&프론트엔드</p>
+            <p>강남대학교 졸업</p>
+          </div>
+          <div className='setting_idx'>
+            <h4>Keyword</h4>
+            <p>소통과 협업의 가치를 중시하는 프론트엔드 개발자</p>
+            <p>끊임없는 배움을 통한 도전</p>
           </div>
         </div>
       </div>    

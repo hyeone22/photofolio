@@ -32,7 +32,7 @@ function Menu() {
   
 
   return (
-    <div className='menu_main'>
+    <div className='menu_main' id='menu_section'>
     <Header />
     <div className='menu_time'>
 

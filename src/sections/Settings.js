@@ -34,7 +34,7 @@ function Settings() {
         </defs>
       </svg>
         <div className='setting_text'>
-          <h2>신속한<b> 변화
+          <h2>신속한 <b>변화
               <svg viewBox="0 0 70 36">
                  <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
               </svg>
@@ -53,21 +53,36 @@ function Settings() {
       </div>
       <div className='setting_content'>
         <div className='setting_contents'>
-        <h3>Upgrade</h3>
+        <h3>Contents</h3>
+        </div>
+        <div className='setting_number'>
+          <p>01</p>
+          <p>02</p>
+          <p>03</p>
         </div>
         <div className='setting_index'>
           <div className='setting_idx'>
-            <h4>Infomation</h4>
-            <p>김승현</p>
-            <p>강남대학교 졸업</p>
-            <p>010-5635-0561</p>
-            <p>wmfrjdnsakdma12@naver.com</p>
-            <p>https://github.com/hyeone22</p>  
+            <h4>Setting</h4>
+            <p>Hello</p>
+            <p>Face ID</p>
+            <p>Setting</p>
+            <p>Call</p>
+            <p>Introduce</p>
+            <p>Home</p>
           </div>
           <div className='setting_idx'>
-            <h4>Education</h4> 
-            <p>강남 이젠아카데미 UI/UX 웹&앱디자인&프론트엔드 수료</p>
-
+            <h4>Project</h4>
+            <p>Project Index</p>
+            <p>삼성전기</p>
+            <p>CJ ONE</p>
+            <p>코스닥 글로벌 세그먼트</p>
+            <p>KAKAOTALK APP</p>
+            <p>NETFLIX APP</p>
+          </div>
+          <div className='setting_idx'>
+            <h4>Other</h4>
+            <p>Facebook Emoji</p>
+            <p>Off</p>
           </div>
           {/* <div className='setting_idx'>
             <h4>Index</h4>

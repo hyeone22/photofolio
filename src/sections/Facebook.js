@@ -7,7 +7,7 @@ import video from '../video/Facebook_emoji.mp4';
 
 function Facebook() {
   return (
-    <div className='facebook_main'>
+    <div className='facebook_main' id='facebook_page'>
     <Header />
     <div className='facebook_header'>
     

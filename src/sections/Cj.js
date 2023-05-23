@@ -50,7 +50,7 @@ function Cj() {
 
 
   return (
-    <div className='cj_main'>
+    <div className='cj_main' id='cj_page'>
       <Background />
       <div className='cj_section' style={sectionStyle}>
         <div className='cj_header'>
@@ -82,7 +82,7 @@ function Cj() {
         </div>
         </blockquote>
         <p className='cj_p'>CJ ONE 웹 사이트의 PC, Tablet, Mobile등 디바이스의 해상도에 맞는 반응형 웹 사이트 제작</p>
-        <ul class="faq" style={sectionStyle}>
+        <ul class="faq" style={sectionStyle}>Comment
         <li className={active ? 'active' : ''}>
       <h3 class="question" onClick={handleClick}>CJ ONE 페이지의 한줄평이 뭐야?
         <div class={`plus-minus-toggle ${active ? 'collapsed' : ''}`}></div>
@@ -100,6 +100,13 @@ function Cj() {
       </div>
     </li>
          </ul>
+          <div className='cj_skill'>
+            <span>Main</span>
+            <span>Sub</span>
+            <span>Sub1</span>
+            <span>Github</span>
+            <span>WA</span>
+          </div>   
       </div>
     </div>
   )
