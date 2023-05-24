@@ -331,6 +331,10 @@
           color: #fff;
           font-weight: bold;
           cursor: pointer;
+          transition: ease-out 0.5s;
+          &:hover{
+            border-bottom: 2px solid #fff;
+          }
         }
       }
 

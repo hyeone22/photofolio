@@ -52,7 +52,7 @@ function Kakao() {
             <span>React-Router-Dom</span>    
           </div>
           <div className='kakao_date'>
-          <span>2023.00 ~ 2023.00.00</span>  
+          <span>2023.02 ~ 2023.03</span>  
           </div>
           <div className='kakao_overview'>
             <h3>Overview</h3>

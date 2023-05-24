@@ -16,6 +16,7 @@ function Kosdaq() {
   },[]);
 
   const url = 'https://github.com/hyeone22/project_website'
+  const url2 = "https://hyeone22.github.io/web_accessibility/"
 
   return (
     <div className='kosdaq_main' id='kosdaq_page'>
@@ -55,7 +56,7 @@ function Kosdaq() {
             <div className='kosdaq_built'>
             <h2>Built</h2>
             <div className='kosdaq_date'>
-            <p>2023.00.00</p>
+            <p>2023.03</p>
             <p>Responsive Web</p>
             </div>
             </div>
@@ -96,7 +97,7 @@ function Kosdaq() {
               </div>
               <div className='kosdaq_footer'>
               <p>28 April 2023</p>
-              <span>웹 접근성 검사</span>
+              <span onClick={()=>{window.open(url2)}}>웹 접근성 검사</span>
               </div>
             </div>        
             <div className='kosdaq_info2'>

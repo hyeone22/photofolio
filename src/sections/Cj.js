@@ -48,6 +48,9 @@ function Cj() {
       setActive2(prevActive2 => !prevActive2);
     };
 
+    const url = "https://hyeone22.github.io/project_cj/"
+    const url2 = "https://github.com/hyeone22/project_cj"
+    const url3 = "https://hyeone22.github.io/web_accessibility/"
 
   return (
     <div className='cj_main' id='cj_page'>
@@ -101,11 +104,9 @@ function Cj() {
     </li>
          </ul>
           <div className='cj_skill'>
-            <span>Main</span>
-            <span>Sub</span>
-            <span>Sub1</span>
-            <span>Github</span>
-            <span>WA</span>
+            <span onClick={()=>{window.open(url)}}>Main</span>
+            <span onClick={()=>{window.open(url2)}}>Github</span>
+            <span onClick={()=>{window.open(url3)}}>WA</span>
           </div>   
       </div>
     </div>

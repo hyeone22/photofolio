@@ -6,6 +6,7 @@ import Header from 'components/Header';
 function Off() {
 
   const [currentTime, setCurrentTime] = useState(new Date());
+  const currentDate = new Date().toLocaleString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -32,7 +33,7 @@ function Off() {
           <span>{formattedHour}</span> : <span>{formattedMin}</span>
         </p>
 
-        <span className='day'>Monday, May 2</span>
+        <span className='day'>{currentDate}</span>
       </div> 
       <div className='load'>
       <span></span>

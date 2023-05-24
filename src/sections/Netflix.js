@@ -26,7 +26,7 @@ function Netflix() {
               <span>Styled-Component</span>
             </div>
             <div className='netflix_date'>
-              <span>2023.00 ~ 2023.00</span>
+              <span>2023.03 ~ 2023.04</span>
             </div>
           </div>
           <div className='netflix_desc'>

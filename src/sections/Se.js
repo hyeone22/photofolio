@@ -65,6 +65,7 @@ function Se() {
   const url1 = "https://hyeone22.github.io/project_se/sub1.html";
   const url2 = "https://hyeone22.github.io/project_se/sub2.html";
   const url3 = "https://github.com/hyeone22/project_se";
+  const url4 = "https://hyeone22.github.io/web_accessibility/"
 
   return (
     <div className='se_main' id='se_page' ref={componentRef}>
@@ -83,7 +84,7 @@ function Se() {
             <div className='se_con1'data-aos="zoom-in"data-aos-delay="100">
               <div className='se_title'>
                 <h3 className='se_h3'>Built</h3>
-                <p>2023.00.00</p>  
+                <p>2023.02.20</p>  
               </div>
               <div className='se_skill'>
                 <span>HTML</span>
@@ -130,7 +131,7 @@ function Se() {
                 <p>HTML/CSS/W3C/SEO 웹 접근성 검사 결과 첨부</p>
               </div>
               <div className='se_skill'>
-                <span>Show !</span>
+                <span onClick={()=>{window.open(url4)}}>Show !</span>
               </div>
               <div className='se_emoji'>
                 <svg width="106" height="17" viewBox="0 0 106 17" fill="none" xmlns="http://www.w3.org/2000/svg">
