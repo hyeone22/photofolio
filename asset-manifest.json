@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/photofolio/static/css/main.e00f0be1.css",
-    "main.js": "/photofolio/static/js/main.a8d18fd9.js",
+    "main.css": "/photofolio/static/css/main.6d31c3cc.css",
+    "main.js": "/photofolio/static/js/main.9053c627.js",
     "static/media/cj-pc.mp4": "/photofolio/static/media/cj-pc.697f0c225f7a6cb2c7c7.mp4",
     "static/media/Netflix_pc.mp4": "/photofolio/static/media/Netflix_pc.5a2070be7f8ae1a83233.mp4",
     "static/media/se_pc.mp4": "/photofolio/static/media/se_pc.263b1858d608f15c7857.mp4",
@@ -25,11 +25,11 @@
     "static/media/kakao.jpg": "/photofolio/static/media/kakao.9785ba2591a3bedee686.jpg",
     "static/media/bubble.jpg": "/photofolio/static/media/bubble.9c25b3c5b32860c58d88.jpg",
     "index.html": "/photofolio/index.html",
-    "main.e00f0be1.css.map": "/photofolio/static/css/main.e00f0be1.css.map",
-    "main.a8d18fd9.js.map": "/photofolio/static/js/main.a8d18fd9.js.map"
+    "main.6d31c3cc.css.map": "/photofolio/static/css/main.6d31c3cc.css.map",
+    "main.9053c627.js.map": "/photofolio/static/js/main.9053c627.js.map"
   },
   "entrypoints": [
-    "static/css/main.e00f0be1.css",
-    "static/js/main.a8d18fd9.js"
+    "static/css/main.6d31c3cc.css",
+    "static/js/main.9053c627.js"
   ]
 }
