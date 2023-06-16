@@ -27,7 +27,7 @@ function Facebook() {
     </div> 
     <div className='facebook_skill'>
       <h3>Facebook Emoji</h3>
-      <p>2023.00.00</p>
+      <p>2023.01</p>
       <span></span>
       <p>3:50</p>
     </div>
